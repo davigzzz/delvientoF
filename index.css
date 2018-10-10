@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+  font-family: oratorstd;
+  src: url("fuentes/OratorStd.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamlight;
+  src: url("fuentes/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamBook;
+  src: url("fuentes/Gotham Book Regular.otf");
+}
+@font-face {
+  font-family: painter;
+  src: url("fuentes/SignPainter.ttf");
+}
+/* BARRA DE NAVEGACION */
+.topnav {
+  font-family: oratorstd;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  background-color: #76A9CC;
+}
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+@media only screen and (min-width: 1500px) {
+  .topnav a {
+    font-size: 27px;
+  }
+}
+.topnav a:hover {
+  color: #76A9CC;
+}
+.topnav .active {
+  color: #76A9CC;
+}
+
+/* LOGO */
+.logo {
+  background-image: url("logo.svg");
+  width: 10rem;
+  height: 70px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 2.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+/* BOTON DE MENU */
+/* contenedor */
+.btn-menu {
+  margin: 1rem 2rem;
+  padding-top: 1.1rem;
+}
+.btn-menu #menu {
+  height: 1rem;
+}
+
+/* desaparecerlo en movil */
+.topnav-right {
+  display: none;
+}
+
+/* boton */
+/* DIMENSIONES DEL LOGO Y MENU IPAD */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .logo {
+    width: 6rem;
+  }
+
+  .btn-menu {
+    padding-top: 2rem;
+  }
+}
+/* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
+@media only screen and (min-width: 1100px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .topnav-right {
+    display: block;
+    float: right;
+    padding-top: 2.2rem;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    width: 6rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .iconos a {
+    padding-top: 1.65rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1100px) and (min-width: 1500px) {
+  .iconos a {
+    font-size: 20px;
+  }
+}
+/* MENU Y SU ANIMACION */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #28324D;
+  overflow-x: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.overlay .closebtn {
+  position: absolute;
+  padding-top: 0px;
+  height: 86px;
+  right: 0px;
+  font-size: 54px;
+  padding-right: 34px;
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .overlay .closebtn .overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 80px;
+  }
+}
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .iconos-menu .fa-1x {
+  font-size: 0.6em;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a .active, .overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
+  color: #929292;
+}
+
+/* Encerrar iconos en círculos */
+i.fab {
+  /* margin: 0.5em; */
+  color: #8F8F8F;
+  border: 1px solid #929292;
+  border-radius: 50%;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+  width: 2.1em;
+  text-align: center;
+}
+i.fab:hover {
+  background: #929292;
+  color: white;
+}
+
+.portada {
+  background-image: url(imagenes_home/portada.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 142vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: painter;
+}
+.portada p {
+  font-size: 41vw;
+  color: white;
+  line-height: 13.5vw;
+  transform: translate(-1vw, -15.5vw);
+}
+.portada p span {
+  font-size: 20vw;
+  padding-left: 20vw;
+}
+
+.texto1 p {
+  font-family: gothamlight;
+  padding: 2rem;
+}
+
+.imper {
+  background-image: url("imagenes_home/gotas.png");
+  background-size: cover;
+  height: 58vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 3.45px;
+  font-family: Raleway;
+}
+.imper .boton {
+  border: white 2px solid;
+  padding: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 12px;
+}
+.imper h5 {
+  letter-spacing: 3.45px;
+}
+
+.pinturas {
+  background-image: url("imagenes_home/sillon.png");
+  background-position-y: bottom;
+  background-size: cover;
+  height: 58vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #808080;
+  letter-spacing: 3.45px;
+  font-family: Raleway;
+}
+.pinturas .boton {
+  border: #808080 2px solid;
+  padding: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 12px;
+}
+.pinturas h5 {
+  letter-spacing: 3.45px;
+}
+
+.adhesivos {
+  background-image: url("imagenes_home/zapatos.png");
+  background-position-y: center;
+  background-size: cover;
+  height: 58vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 3.45px;
+  font-family: Raleway;
+}
+.adhesivos .boton {
+  border: white 2px solid;
+  padding: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 12px;
+}
+.adhesivos h5 {
+  letter-spacing: 3.45px;
+}
+
+.contenedor-botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: gothamlight;
+}
+.contenedor-botones .boton:nth-child(1) {
+  margin: 3rem 0 1rem 0;
+  background-color: #76A9CC;
+  color: white;
+  padding: 0.5rem 2.55rem 0.5rem 2.55rem;
+}
+.contenedor-botones .boton:nth-child(2) {
+  margin-bottom: 4rem;
+  color: #76A9CC;
+  border: 1px #76A9CC solid;
+  padding: 0.5rem 2.1rem 0.5rem 2.1rem;
+}
+
+.dispreh {
+  background-image: url("imagenes_home/dispreh.png");
+  height: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: oratorstd;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.dispreh p {
+  color: white;
+  text-align: center;
+}
+.dispreh a {
+  color: #B89B95;
+  border: #B89B95 1px solid;
+  padding: 0 1rem 0.35rem 1rem;
+}
+
+.formulario {
+  margin-top: 3rem;
+}
+.formulario input[type=text] {
+  letter-spacing: 3px;
+  width: 80%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  color: #d9dddf;
+  border-bottom: 1px solid #78797c;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.formulario input[type=text] .telefono {
+  margin-bottom: 1.75rem;
+}
+.formulario input[type=submit] {
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  /* margin-left: 35%; */
+  border: 1px solid;
+  border-color: #0071AE;
+  color: #0071AE;
+  background: transparent;
+  cursor: pointer;
+  font-family: gothamlight;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  transition: all 0.5s ease;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.formulario input[type=submit]:hover {
+  border-color: #76A9CC;
+  color: #808080;
+  background-color: #76A9CC;
+}
+.formulario .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulario .b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.formulario .terms {
+  font-family: gothamlight;
+  display: flex;
+  font-size: 12.37px;
+  text-align: center;
+  font-family: gothamlight;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+.formulario .terms span {
+  font-family: gothamlight;
+}
+.formulario #gota {
+  height: 20px;
+}
+
+.rodillo {
+  background-image: url("imagenes_home/rodillo.png");
+  background-size: cover;
+  height: 48vw;
+}
+
+/*# sourceMappingURL=index.css.map */
