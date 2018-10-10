@@ -46,7 +46,7 @@
 
 /* LOGO */
 .logo {
-  background-image: url("logo.svg");
+  background-image: url("iconos_logos/logo.svg");
   width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
@@ -321,7 +321,7 @@ i.fab:hover {
 .dispreh a {
   color: #B89B95;
   border: #B89B95 1px solid;
-  padding: 0 1rem 0.35rem 1rem;
+  padding: 0 1rem 0rem 1rem;
 }
 
 .formulario {
@@ -397,6 +397,46 @@ i.fab:hover {
   background-image: url("imagenes_home/rodillo.png");
   background-size: cover;
   height: 48vw;
+}
+
+.footer-movil {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1A1F33;
+  height: 259px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: gothamlight;
+}
+
+.logo-blanco {
+  background-image: url("iconos_logos/logo-footer.svg");
+  width: 8rem;
+  height: 90px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 0.73rem;
+  padding-bottom: 5.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a i {
+  padding-top: 2rem;
+}
+
+.footer-movil a {
+  color: white;
+}
+
+.letra {
+  transform: rotate(-45deg);
 }
 
 /*# sourceMappingURL=index.css.map */
