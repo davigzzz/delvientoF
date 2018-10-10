@@ -46,7 +46,7 @@
 
 /* LOGO */
 .logo {
-  background-image: url("iconos_logos/logo.svg");
+  background-image: url("iconos_logos/logo.png");
   width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
@@ -425,7 +425,7 @@ i.fab:hover {
   font-family: gothamlight;
 }
 .footer-movil .logo-blanco {
-  background-image: url("iconos_logos/logo-footer.svg");
+  background-image: url("iconos_logos/logo-footer.png");
   width: 8rem;
   height: 90px;
   /* margin: 2rem, 2rem; */
