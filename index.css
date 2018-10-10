@@ -234,6 +234,9 @@ i.fab:hover {
 .imper h5 {
   letter-spacing: 3.45px;
 }
+.imper .mas {
+  font-size: 32px;
+}
 
 .pinturas {
   background-image: url("imagenes_home/sillon.png");
@@ -258,6 +261,9 @@ i.fab:hover {
 .pinturas h5 {
   letter-spacing: 3.45px;
 }
+.pinturas .mas {
+  font-size: 32px;
+}
 
 .adhesivos {
   background-image: url("imagenes_home/zapatos.png");
@@ -281,6 +287,9 @@ i.fab:hover {
 }
 .adhesivos h5 {
   letter-spacing: 3.45px;
+}
+.adhesivos .mas {
+  font-size: 32px;
 }
 
 .contenedor-botones {
@@ -415,8 +424,7 @@ i.fab:hover {
   background-size: cover;
   font-family: gothamlight;
 }
-
-.logo-blanco {
+.footer-movil .logo-blanco {
   background-image: url("iconos_logos/logo-footer.svg");
   width: 8rem;
   height: 90px;
@@ -426,17 +434,11 @@ i.fab:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-a i {
-  padding-top: 2rem;
-}
-
 .footer-movil a {
   color: white;
 }
-
-.letra {
-  transform: rotate(-45deg);
+.footer-movil a i {
+  padding-top: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
