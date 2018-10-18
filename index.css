@@ -196,23 +196,126 @@ i.fab:hover {
   justify-content: center;
   font-family: painter;
 }
+@media only screen and (min-width: 700px) {
+  .portada {
+    background-image: url("imagenes_home/portadam.jpg");
+    height: 66vw;
+  }
+}
 .portada p {
   font-size: 41vw;
   color: white;
   line-height: 13.5vw;
   transform: translate(-1vw, -15.5vw);
 }
+@media only screen and (min-width: 700px) {
+  .portada p {
+    font-size: 27vw;
+    transform: translate(4vw, 3.5vw);
+    line-height: 10.5vw;
+  }
+}
 .portada p span {
   font-size: 20vw;
   padding-left: 20vw;
 }
-
-.texto1 p {
-  font-family: gothamlight;
-  padding: 2rem;
+@media only screen and (min-width: 700px) {
+  .portada p span {
+    font-size: 16vw;
+    padding-left: 10vw;
+  }
 }
 
-.imper {
+.seccion1 {
+  font-family: gothamlight;
+  display: flex;
+}
+.seccion1 .texto1 {
+  flex: 100%;
+}
+@media only screen and (min-width: 700px) {
+  .seccion1 .texto1 {
+    flex: 50%;
+  }
+}
+.seccion1 .texto1 p {
+  padding: 2rem;
+}
+@media only screen and (min-width: 700px) {
+  .seccion1 .texto1 p {
+    padding: 7vw;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+  }
+}
+.seccion1 .texto1 p span {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .seccion1 .texto1 p span {
+    display: inline;
+  }
+}
+.seccion1 .texto2 {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .seccion1 .texto2 {
+    display: block;
+    flex: 50%;
+    padding: 7vw;
+    padding-left: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.seccion2 {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .seccion2 {
+    font-family: gothamlight;
+    display: flex;
+    height: 40vw;
+  }
+  .seccion2 .cubetas {
+    flex: 55%;
+    background-image: url("imagenes_home/cubetasXL.jpg");
+    background-size: 50vw;
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+  .seccion2 .brocha {
+    display: flex;
+    flex: 45%;
+    background-image: url("imagenes_home/brocha.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: 11vw;
+    background-position: center;
+    background-position-y: 6vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion2 .brocha p {
+    width: 70%;
+    justify-content: center;
+  }
+}
+
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.contenedor-imagenes .imper {
   background-image: url("imagenes_home/gotas.png");
   background-size: cover;
   height: 58vw;
@@ -224,21 +327,41 @@ i.fab:hover {
   letter-spacing: 3.45px;
   font-family: Raleway;
 }
-.imper .boton {
+.contenedor-imagenes .imper .boton {
   border: white 2px solid;
   padding: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 12px;
-}
-.imper h5 {
   letter-spacing: 3.45px;
+  color: white;
 }
-.imper .mas {
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .imper .boton {
+    font-size: 2vw;
+  }
+}
+.contenedor-imagenes .imper .mas {
   font-size: 32px;
 }
-
-.pinturas {
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .imper .mas {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .imper {
+    flex: 33%;
+    order: 3;
+    background-image: url("imagenes_home/gotasXL.jpg");
+    height: 43vw;
+    filter: brightness(0.7);
+    transition: all 0.7s ease;
+  }
+  .contenedor-imagenes .imper:hover {
+    filter: brightness(1);
+  }
+}
+.contenedor-imagenes .pinturas {
   background-image: url("imagenes_home/sillon.png");
   background-position-y: bottom;
   background-size: cover;
@@ -251,21 +374,46 @@ i.fab:hover {
   letter-spacing: 3.45px;
   font-family: Raleway;
 }
-.pinturas .boton {
+.contenedor-imagenes .pinturas .boton {
   border: #808080 2px solid;
   padding: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 12px;
-}
-.pinturas h5 {
   letter-spacing: 3.45px;
+  color: #808080;
 }
-.pinturas .mas {
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .pinturas .boton {
+    font-size: 2vw;
+  }
+}
+.contenedor-imagenes .pinturas .mas {
   font-size: 32px;
 }
-
-.adhesivos {
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .pinturas .mas {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .pinturas {
+    flex: 100%;
+    order: 1;
+    background-image: url("imagenes_home/sillonXL.jpg");
+    height: 43vw;
+    filter: brightness(0.7);
+    transition: all 0.7s ease;
+  }
+  .contenedor-imagenes .pinturas:hover {
+    filter: brightness(1);
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .pinturas {
+    height: 29vw;
+  }
+}
+.contenedor-imagenes .adhesivos {
   background-image: url("imagenes_home/zapatos.png");
   background-position-y: center;
   background-size: cover;
@@ -278,18 +426,91 @@ i.fab:hover {
   letter-spacing: 3.45px;
   font-family: Raleway;
 }
-.adhesivos .boton {
+.contenedor-imagenes .adhesivos .boton {
   border: white 2px solid;
   padding: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 12px;
-}
-.adhesivos h5 {
   letter-spacing: 3.45px;
+  color: white;
 }
-.adhesivos .mas {
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .adhesivos .boton {
+    font-size: 2vw;
+  }
+}
+.contenedor-imagenes .adhesivos .mas {
   font-size: 32px;
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .adhesivos .mas {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .adhesivos {
+    flex: 33%;
+    order: 2;
+    background-image: url("imagenes_home/zapatosXL.jpg");
+    height: 43vw;
+    filter: brightness(0.7);
+    transition: all 0.7s ease;
+  }
+  .contenedor-imagenes .adhesivos:hover {
+    filter: brightness(1);
+  }
+}
+.contenedor-imagenes .recubrimientos {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .recubrimientos {
+    background-size: cover;
+    height: 58vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 3.45px;
+    font-family: Raleway;
+  }
+  .contenedor-imagenes .recubrimientos .boton {
+    border: white 2px solid;
+    padding: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    letter-spacing: 3.45px;
+    color: white;
+  }
+}
+@media only screen and (min-width: 700px) and (min-width: 700px) {
+  .contenedor-imagenes .recubrimientos .boton {
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-imagenes .recubrimientos .mas {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 700px) and (min-width: 700px) {
+  .contenedor-imagenes .recubrimientos .mas {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 700px) and (min-width: 700px) {
+  .contenedor-imagenes .recubrimientos {
+    flex: 33%;
+    order: 4;
+    background-image: url("imagenes_home/textura.jpg");
+    height: 43vw;
+    filter: brightness(0.7);
+    transition: all 0.7s ease;
+  }
+  .contenedor-imagenes .recubrimientos:hover {
+    filter: brightness(1);
+  }
 }
 
 .contenedor-botones {
@@ -299,17 +520,46 @@ i.fab:hover {
   flex-direction: column;
   font-family: gothamlight;
 }
+@media only screen and (min-width: 700px) {
+  .contenedor-botones {
+    flex-direction: row;
+    font-size: 20px;
+  }
+}
+.contenedor-botones .boton {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
 .contenedor-botones .boton:nth-child(1) {
   margin: 3rem 0 1rem 0;
   background-color: #76A9CC;
   color: white;
   padding: 0.5rem 2.55rem 0.5rem 2.55rem;
 }
+@media only screen and (min-width: 700px) {
+  .contenedor-botones .boton:nth-child(1) {
+    margin: 5rem 2rem 5rem 0;
+  }
+  .contenedor-botones .boton:nth-child(1):hover {
+    background-color: white;
+    color: #76A9CC;
+    border: 1px #76A9CC solid;
+  }
+}
 .contenedor-botones .boton:nth-child(2) {
   margin-bottom: 4rem;
   color: #76A9CC;
   border: 1px #76A9CC solid;
   padding: 0.5rem 2.1rem 0.5rem 2.1rem;
+}
+@media only screen and (min-width: 700px) {
+  .contenedor-botones .boton:nth-child(2) {
+    margin: 5rem 0 5rem 2rem;
+  }
+  .contenedor-botones .boton:nth-child(2):hover {
+    background-color: #76A9CC;
+    color: white;
+  }
 }
 
 .dispreh {
@@ -323,6 +573,12 @@ i.fab:hover {
   justify-content: center;
   font-size: 26px;
 }
+@media only screen and (min-width: 700px) {
+  .dispreh {
+    background-image: url("imagenes_home/disprehXL.jpg");
+    height: 39vw;
+  }
+}
 .dispreh p {
   color: white;
   text-align: center;
@@ -333,10 +589,35 @@ i.fab:hover {
   padding: 0 1rem 0rem 1rem;
 }
 
-.formulario {
+.seccion3 {
+  display: flex;
+}
+@media only screen and (min-width: 700px) {
+  .seccion3 {
+    height: 70vw;
+  }
+}
+.seccion3 .pintor {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .seccion3 .pintor {
+    display: block;
+    flex: 50%;
+    background-image: url("imagenes_home/pintor.jpg");
+    background-size: cover;
+  }
+}
+.seccion3 .formulario {
+  flex: 100%;
   margin-top: 3rem;
 }
-.formulario input[type=text] {
+@media only screen and (min-width: 700px) {
+  .seccion3 .formulario {
+    flex: 50%;
+  }
+}
+.seccion3 .formulario input[type=text] {
   letter-spacing: 3px;
   width: 80%;
   margin: 8px 0;
@@ -347,10 +628,15 @@ i.fab:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.formulario input[type=text] .telefono {
+@media only screen and (min-width: 700px) {
+  .seccion3 .formulario input[type=text] {
+    margin: 4vw;
+  }
+}
+.seccion3 .formulario input[type=text] .telefono {
   margin-bottom: 1.75rem;
 }
-.formulario input[type=submit] {
+.seccion3 .formulario input[type=submit] {
   align-items: center;
   align-content: center;
   margin-top: 1rem;
@@ -369,23 +655,23 @@ i.fab:hover {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.formulario input[type=submit]:hover {
+.seccion3 .formulario input[type=submit]:hover {
   border-color: #76A9CC;
   color: #808080;
   background-color: #76A9CC;
 }
-.formulario .a {
+.seccion3 .formulario .a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.formulario .b {
+.seccion3 .formulario .b {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.formulario .terms {
+.seccion3 .formulario .terms {
   font-family: gothamlight;
   display: flex;
   font-size: 12.37px;
@@ -395,10 +681,10 @@ i.fab:hover {
   justify-content: center;
   margin-top: -2rem;
 }
-.formulario .terms span {
+.seccion3 .formulario .terms span {
   font-family: gothamlight;
 }
-.formulario #gota {
+.seccion3 .formulario #gota {
   height: 20px;
 }
 
@@ -406,6 +692,12 @@ i.fab:hover {
   background-image: url("imagenes_home/rodillo.png");
   background-size: cover;
   height: 48vw;
+}
+@media only screen and (min-width: 700px) {
+  .rodillo {
+    background-image: url("imagenes_home/rodilloXL.jpg");
+    height: 43vw;
+  }
 }
 
 .footer-movil {
