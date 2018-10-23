@@ -75,15 +75,6 @@
 
 /* boton */
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .logo {
-    width: 6rem;
-  }
-
-  .btn-menu {
-    padding-top: 2rem;
-  }
-}
 /* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
 @media only screen and (min-width: 1100px) {
   .btn-menu {
@@ -91,14 +82,14 @@
   }
 
   .topnav-right {
-    display: block;
+    display: flex;
     float: right;
-    padding-top: 2.2rem;
     padding-right: 2rem;
+    align-items: center;
   }
 
   .logo {
-    width: 6rem;
+    width: 10rem;
     margin-top: 3rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
@@ -187,7 +178,7 @@ i.fab:hover {
 }
 
 .portada {
-  background-image: url(imagenes_home/portada.png);
+  background-image: url("imagenes_home/portada.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 142vw;
@@ -583,19 +574,24 @@ i.fab:hover {
   color: white;
   text-align: center;
 }
+@media only screen and (min-width: 900px) {
+  .dispreh p {
+    font-size: 4vw;
+  }
+}
 .dispreh a {
   color: #B89B95;
   border: #B89B95 1px solid;
   padding: 0 1rem 0rem 1rem;
 }
+@media only screen and (min-width: 900px) {
+  .dispreh a {
+    font-size: 2.5vw;
+  }
+}
 
 .seccion3 {
   display: flex;
-}
-@media only screen and (min-width: 700px) {
-  .seccion3 {
-    height: 70vw;
-  }
 }
 .seccion3 .pintor {
   display: none;
@@ -689,7 +685,7 @@ i.fab:hover {
 }
 
 .rodillo {
-  background-image: url("imagenes_home/rodillo.png");
+  background-image: url("imagenes_home/rodillo.jpg");
   background-size: cover;
   height: 48vw;
 }
@@ -716,6 +712,11 @@ i.fab:hover {
   background-size: cover;
   font-family: gothamlight;
 }
+@media only screen and (min-width: 700px) {
+  .footer-movil {
+    display: none;
+  }
+}
 .footer-movil .logo-blanco {
   background-image: url("iconos_logos/logo-footer.png");
   width: 8rem;
@@ -731,6 +732,39 @@ i.fab:hover {
 }
 .footer-movil a i {
   padding-top: 2rem;
+}
+
+.footer-xl {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .footer-xl {
+    background-color: #76A9CC;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 13rem;
+  }
+  .footer-xl .enlaces {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-xl a {
+    color: white;
+  }
+  .footer-xl .abajo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-xl .abajo .estimado {
+    padding-left: 23rem;
+    padding-right: 5rem;
+  }
+}
+
+#estimado {
+  height: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
