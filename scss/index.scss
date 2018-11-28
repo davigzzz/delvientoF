@@ -4,21 +4,21 @@ $gris: #808080;
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
     font-family: oratorstd;
-    src: url("fuentes/OratorStd.otf") format("opentype");
+    src: url("../fuentes/OratorStd.otf") format("opentype");
 }
 
 @font-face{
     font-family: gothamlight;
-    src: url("fuentes/Gotham-Light.otf") format("opentype");
+    src: url("../fuentes/Gotham-Light.otf") format("opentype");
 }
 
 @font-face{
     font-family: gothamBook;
-    src: url("fuentes/Gotham\ Book\ Regular.otf");
+    src: url("../fuentes/Gotham\ Book\ Regular.otf");
 }
 @font-face{
     font-family: painter;
-    src: url("fuentes/SignPainter.ttf");
+    src: url("../fuentes/SignPainter.ttf");
 }
 /* BARRA DE NAVEGACION */
 .topnav {
@@ -27,6 +27,8 @@ $gris: #808080;
     display: flex;
     overflow: hidden;
     background-color: $azul;
+    height: 140px;
+    
     a{
         float: left;
         color: black;
@@ -47,7 +49,7 @@ $gris: #808080;
     }}
       /* LOGO */
     .logo{
-        background-image: url("iconos_logos/logo.png");
+        background-image: url("../iconos_logos/logo.png");
         width: 10rem;
         height: 70px;
         /* margin: 2rem, 2rem; */
@@ -74,14 +76,7 @@ $gris: #808080;
 }
   /* boton */
    /* DIMENSIONES DEL LOGO Y MENU IPAD */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-    .logo{
-        width: 6rem;
-    }
-    .btn-menu{
-        padding-top: 2rem;
-    }
-}
+
 
   /* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
 @media only screen and (min-width: 1100px){
@@ -90,13 +85,13 @@ $gris: #808080;
     }
     
     .topnav-right{
-        display: block;
+        display: flex;
         float: right;  
-        padding-top: 2.2rem;  
         padding-right: 2rem;    
+        align-items: center;
     }
     .logo{
-        width: 6rem;
+        width: 10rem;
         margin-top: 3rem;
         margin-left: 3rem;
         margin-bottom: 3rem;
@@ -188,7 +183,7 @@ i.fab {
 } 
 
 .portada{
-    background-image: url(imagenes_home/portada.png);
+    background-image: url("../imagenes_home/portada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 142vw;
@@ -197,7 +192,7 @@ i.fab {
     justify-content: center;
     font-family: painter;
     @media only screen and (min-width: 700px){
-        background-image: url("imagenes_home/portadam.jpg");
+        background-image: url("../imagenes_home/portadam.jpg");
         height: 66vw;
     }
     p{
@@ -268,7 +263,7 @@ i.fab {
         height: 40vw;
         .cubetas{
             flex: 55%;
-            background-image: url("imagenes_home/cubetasXL.jpg");
+            background-image: url("../imagenes_home/cubetasXL.jpg");
             background-size: 50vw;
             background-position-x: right;
             background-repeat: no-repeat;
@@ -276,7 +271,7 @@ i.fab {
         .brocha{
             display: flex;
             flex: 45%;
-            background-image: url("imagenes_home/brocha.jpg");
+            background-image: url("../imagenes_home/brocha.jpg");
             background-repeat: no-repeat;
             display: flex;
             background-size: 11vw;
@@ -347,16 +342,16 @@ i.fab {
         flex-wrap: wrap;
     }
     .imper{
-        background-image: url("imagenes_home/gotas.png");
+        background-image: url("../imagenes_home/gotas.png");
         @include imagenes(white);
-        @include imagenesXL(33%, 3, "imagenes_home/gotasXL.jpg");
+        @include imagenesXL(33%, 3, "../imagenes_home/gotasXL.jpg");
     }
     
     .pinturas{
-        background-image: url("imagenes_home/sillon.png");
+        background-image: url("../imagenes_home/sillon.png");
         background-position-y: bottom;
         @include imagenes($gris);
-        @include imagenesXL(100%, 1, "imagenes_home/sillonXL.jpg");
+        @include imagenesXL(100%, 1, "../imagenes_home/sillonXL.jpg");
         @media only screen and (min-width: 700px){
             height: 29vw;
         }
@@ -364,16 +359,16 @@ i.fab {
     }
     
     .adhesivos{
-        background-image: url("imagenes_home/zapatos.png");
+        background-image: url("../imagenes_home/zapatos.png");
         background-position-y: center;
         @include imagenes(white);
-        @include imagenesXL(33%, 2, "imagenes_home/zapatosXL.jpg");
+        @include imagenesXL(33%, 2, "../imagenes_home/zapatosXL.jpg");
     }    
     .recubrimientos{
         display: none;
         @media only screen and (min-width: 700px){
             @include imagenes(white);
-            @include imagenesXL(33%, 4, "imagenes_home/textura.jpg");
+            @include imagenesXL(33%, 4, "../imagenes_home/textura.jpg");
         }
     }
 }
@@ -429,7 +424,7 @@ i.fab {
 }
 
 .dispreh{
-    background-image: url("imagenes_home/dispreh.png");
+    background-image: url("../imagenes_home/dispreh.png");
     height: 100vw;
     background-size: cover;
     display: flex;
@@ -439,17 +434,23 @@ i.fab {
     justify-content: center;
     font-size: 26px;
     @media only screen and (min-width: 700px){
-        background-image: url("imagenes_home/disprehXL.jpg");
+        background-image: url("../imagenes_home/disprehXL.jpg");
         height: 39vw;
     }
     p{
         color: white;
         text-align: center;     
+        @media only screen and (min-width: 900px){
+            font-size: 4vw;
+        }
     }
     a{
         color: #B89B95;
         border: #B89B95 1px solid;
         padding: 0 1rem 0rem 1rem;
+        @media only screen and (min-width: 900px){
+            font-size: 2.5vw;
+        }
     }
 }
 
@@ -458,15 +459,13 @@ i.fab {
 
 .seccion3{
     display: flex;
-    @media only screen and (min-width: 700px){
-        height: 70vw;
-    }
+    
     .pintor{
         display: none;
         @media only screen and (min-width: 700px){
             display: block;
             flex: 50%;
-            background-image: url("imagenes_home/pintor.jpg");
+            background-image: url("../imagenes_home/pintor.jpg");
             background-size: cover;
         }
         
@@ -553,17 +552,20 @@ i.fab {
 
 
 .rodillo{
-    background-image: url("imagenes_home/rodillo.png");
+    background-image: url("../imagenes_home/rodillo.jpg");
     background-size: cover;
     height: 48vw;
     @media only screen and (min-width: 700px){
-        background-image: url("imagenes_home/rodilloXL.jpg");
+        background-image: url("../imagenes_home/rodilloXL.jpg");
         height: 43vw;
     }
 }
 
 
 .footer-movil{
+    @media only screen and (min-width: 700px){
+        display: none;
+    }
     color: white;
     font-size: 12px;
     letter-spacing: 1px;
@@ -579,7 +581,7 @@ i.fab {
     background-size: cover;
     font-family: gothamlight;
     .logo-blanco{
-        background-image: url("iconos_logos/logo-footer.png");
+        background-image: url("../iconos_logos/logo-footer.png");
         width: 8rem;
         height: 90px;
         /* margin: 2rem, 2rem; */
@@ -596,4 +598,36 @@ i.fab {
         
         }
     }
+}
+
+.footer-xl{
+    display: none;
+    @media only screen and (min-width: 700px){
+        background-color: $azul;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 13rem;
+        .enlaces{
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            color: white;
+        }
+        .abajo{
+            display: flex;
+            justify-content: flex-end;
+            .estimado{
+                padding-left: 23rem;
+                padding-right: 5rem;
+            }
+        }
+    }
+    
+}
+
+#estimado{
+    height: 1rem;;
 }
