@@ -22,8 +22,7 @@
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #76A9CC;
-  height: 140px;
+  background-color: #C81F28;
 }
 .topnav a {
   float: left;
@@ -47,7 +46,7 @@
 
 /* LOGO */
 .logo {
-  background-image: url("iconos_logos/logo.png");
+  background-image: url("../iconos_logos/logo.png");
   width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
@@ -229,6 +228,10 @@ i.fab:hover {
   }
 }
 
+#ultimo {
+  margin-bottom: 0;
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -236,6 +239,8 @@ i.fab:hover {
 @media only screen and (min-width: 700px) {
   .contenedor {
     flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 .contenedor .imagen {
@@ -260,12 +265,23 @@ i.fab:hover {
   font-family: gothamlight;
   margin: 2rem;
 }
+.contenedor .texto h4 {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .contenedor .texto h4 {
+    display: block;
+    font-family: Raleway;
+    margin-bottom: 2rem;
+  }
+}
 .contenedor .texto .parrafo {
   display: none;
 }
 @media only screen and (min-width: 700px) {
   .contenedor .texto .parrafo {
-    display: inline;
+    display: block;
+    margin-bottom: 4rem;
   }
 }
 
@@ -345,7 +361,7 @@ i.fab:hover {
   }
 }
 .footer-movil .logo-blanco {
-  background-image: url("iconos_logos/logo-footer.png");
+  background-image: url("../iconos_logos/logo-footer.png");
   width: 8rem;
   height: 90px;
   /* margin: 2rem, 2rem; */
@@ -388,7 +404,7 @@ i.fab:hover {
   padding-top: 2rem;
 }
 .footer-grande .col-izquierda .logo-blanco {
-  background-image: url("iconos_logos/logo.png");
+  background-image: url("../iconos_logos/logo.png");
   width: 16rem;
   height: 90px;
   /* margin: 2rem, 2rem; */

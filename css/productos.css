@@ -46,7 +46,7 @@
 
 /* LOGO */
 .logo {
-  background-image: url("iconos_logos/logo.png");
+  background-image: url("../iconos_logos/logo.png");
   width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
@@ -734,7 +734,7 @@ i.fab:hover {
   justify-content: space-evenly;
   font-family: gothamlight;
   margin: 2rem;
-  font-size: 12px;
+  font-size: 10px;
 }
 @media only screen and (min-width: 900px) {
   .contenedor-botones {
@@ -804,7 +804,7 @@ i.fab:hover {
   }
 }
 .footer-movil .logo-blanco {
-  background-image: url("iconos_logos/logo-footer.png");
+  background-image: url("../iconos_logos/logo-footer.png");
   width: 8rem;
   height: 90px;
   /* margin: 2rem, 2rem; */
@@ -847,7 +847,7 @@ i.fab:hover {
   padding-top: 2rem;
 }
 .footer-grande .col-izquierda .logo-blanco {
-  background-image: url("iconos_logos/logo.png");
+  background-image: url("../iconos_logos/logo.png");
   width: 16rem;
   height: 90px;
   /* margin: 2rem, 2rem; */
