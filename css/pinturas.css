@@ -193,12 +193,33 @@ i.fab:hover {
 .descripcion {
   margin: 2rem;
 }
+@media only screen and (min-width: 700px) {
+  .descripcion {
+    background-image: url(../imagenes_pinturas/fondo.png);
+    background-size: 56vw;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -14vw;
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+}
 .descripcion h4 {
   font-family: Raleway;
+}
+@media only screen and (min-width: 700px) {
+  .descripcion h4 {
+    padding-top: 3rem;
+  }
 }
 .descripcion p {
   font-family: gothamlight;
   text-align: justify;
+}
+@media only screen and (min-width: 700px) {
+  .descripcion p {
+    margin-right: 42vw;
+  }
 }
 
 #plata {
