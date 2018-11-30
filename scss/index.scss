@@ -27,8 +27,10 @@ $gris: #808080;
     display: flex;
     overflow: hidden;
     background-color: $azul;
-    height: 140px;
-    
+    height: 100px;
+    @media only screen and (min-width: 700px){
+        height: 140px;
+    }
     a{
         float: left;
         color: black;
@@ -59,6 +61,9 @@ $gris: #808080;
         background-size: 100%;
         background-repeat: no-repeat;
         z-index: 2;
+        @media only screen and (min-width: 700px){
+            width: 15rem;
+        }
     }
     /* BOTON DE MENU */
     /* contenedor */
@@ -91,8 +96,8 @@ $gris: #808080;
         align-items: center;
     }
     .logo{
-        width: 10rem;
-        margin-top: 3rem;
+        width: 15rem;
+        margin-top: 1rem;
         margin-left: 3rem;
         margin-bottom: 3rem;
     }

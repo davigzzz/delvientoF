@@ -22,13 +22,7 @@
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #C81F28;
-  height: 100px;
-}
-@media only screen and (min-width: 700px) {
-  .topnav {
-    height: 140px;
-  }
+  background-color: #76A9CC;
 }
 .topnav a {
   float: left;
@@ -44,10 +38,10 @@
   }
 }
 .topnav a:hover {
-  color: white;
+  color: #76A9CC;
 }
 .topnav .active {
-  color: white;
+  color: #76A9CC;
 }
 
 /* LOGO */
@@ -62,11 +56,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 2;
-}
-@media only screen and (min-width: 700px) {
-  .logo {
-    width: 15rem;
-  }
 }
 
 /* BOTON DE MENU */
@@ -100,8 +89,8 @@
   }
 
   .logo {
-    width: 15rem;
-    margin-top: 1rem;
+    width: 10rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
   }
@@ -189,13 +178,13 @@ i.fab:hover {
 }
 
 .portada {
-  background-image: url("../imagenes_pinturas/portadaS.jpg");
+  background-image: url("../imagenes_impermeabilizantes/portadaS.jpg");
   background-size: cover;
-  height: 93vw;
+  height: 79vw;
 }
 @media only screen and (min-width: 600px) {
   .portada {
-    background-image: url("../imagenes_pinturas/portada.jpg");
+    background-image: url("../imagenes_impermeabilizantes/portada.jpg");
     background-size: cover;
     height: 45vw;
   }
@@ -222,6 +211,7 @@ i.fab:hover {
 }
 .descripcion h4 {
   font-family: Raleway;
+  margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 900px) {
   .descripcion h4 {
@@ -238,118 +228,129 @@ i.fab:hover {
   }
 }
 
-#plata {
-  background-image: url("../imagenes_pinturas/plata.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #plata {
-    background-image: url("../imagenes_pinturas/plataL.jpg");
-  }
-}
-
-#oro {
-  background-image: url("../imagenes_pinturas/oro.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #oro {
-    background-image: url("../imagenes_pinturas/oroL.jpg");
-  }
-}
-
-#platino {
-  background-image: url("../imagenes_pinturas/platino.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #platino {
-    background-image: url("../imagenes_pinturas/platinoL.jpg");
-  }
-}
-
-#ultimo {
-  margin-bottom: 0;
-}
-
-.contenedor {
+.seccion {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 700px) {
-  .contenedor {
+@media only screen and (min-width: 900px) {
+  .seccion {
     flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 }
-.contenedor .imagen {
-  flex: 100%;
-  height: 56vw;
+.seccion .izquierda {
+  flex: 45%;
+  background-image: url("../imagenes_impermeabilizantes/imperS.jpg");
   background-size: cover;
-  background-image: url("../imagenes_pinturas/bronce.jpg");
+  height: 56vw;
 }
-@media only screen and (min-width: 700px) {
-  .contenedor .imagen {
-    background-image: url("../imagenes_pinturas/bronceL.jpg");
+@media only screen and (min-width: 900px) {
+  .seccion .izquierda {
+    margin: 3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../imagenes_impermeabilizantes/imper.jpg");
+    height: 45vw;
   }
 }
-@media only screen and (min-width: 700px) {
-  .contenedor .imagen {
-    flex: 33%;
-    height: 38vw;
-  }
-}
-.contenedor .texto {
-  flex: 67%;
-  font-family: gothamlight;
-  margin: 2rem;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto p {
-    margin-left: 3rem;
-  }
-}
-.contenedor .texto h4 {
-  display: none;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto h4 {
-    display: block;
-    font-family: Raleway;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
-  }
-}
-.contenedor .texto .parrafo {
-  display: none;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto .parrafo {
-    display: block;
-    margin-bottom: 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .contenedor .texto .parrafo {
-    margin-right: 15vw;
-  }
-}
-.contenedor .texto .caracteristicas {
+.seccion .derecha {
+  flex: 55%;
   display: flex;
+  flex-direction: column;
 }
-.contenedor .texto .caracteristicas p {
-  flex: 65%;
+.seccion .derecha h3 {
+  display: none;
 }
-.contenedor .texto .caracteristicas .botones {
-  flex: 35%;
+@media only screen and (min-width: 900px) {
+  .seccion .derecha h3 {
+    font-family: Raleway;
+    display: block;
+    padding-top: 7vw;
+    font-size: 25px;
+    margin-left: 2.5rem;
+    text-align: unset;
+  }
+}
+.seccion .derecha .circulos-color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+@media only screen and (min-width: 900px) {
+  .seccion .derecha .circulos-color {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.seccion .derecha .circulos-color .contenedor-color {
+  display: flex;
+  flex: 33%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+  .seccion .derecha .circulos-color .contenedor-color {
+    flex: 15%;
+  }
+}
+.seccion .derecha .circulos-color .contenedor-color .circulo {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: #C85A2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media only screen and (min-width: 900px) {
+  .seccion .derecha .circulos-color .contenedor-color .circulo {
+    font-size: 3vw;
+    width: 7vw;
+    height: 7vw;
+  }
+}
+.seccion .derecha .circulos-color .contenedor-color .nombre-color {
+  font-size: 8px;
+  padding-top: 0.5rem;
+}
+@media only screen and (min-width: 600px) {
+  .seccion .derecha .circulos-color .contenedor-color .nombre-color {
+    font-size: 16px;
+  }
 }
 
-#botonesL {
-  display: none;
+.caracteristicas {
+  margin: 2rem;
+  font-family: gothamlight;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
+  .caracteristicas {
+    display: none;
+  }
+}
+
+.descripcionXL {
+  margin: 1.5rem;
+  display: none;
+  font-family: gothamlight;
+}
+@media only screen and (min-width: 900px) {
+  .descripcionXL {
+    display: block;
+    margin: 1.5rem 4.5rem 1.5rem 2.5rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   #botonesL {
     display: flex;
     flex-direction: column;
-    flex: 35%;
+    flex: 25%;
   }
 }
 
@@ -360,15 +361,14 @@ i.fab:hover {
   font-family: gothamlight;
   margin-bottom: 2rem;
   font-size: 10px;
+  width: 100%;
+  margin-top: 3rem;
 }
 @media only screen and (min-width: 900px) {
   .contenedor-botones {
-    display: none;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .contenedor-botones {
     font-size: 16px;
+    width: unset;
+    justify-content: center;
   }
 }
 .contenedor-botones .boton {
@@ -381,7 +381,7 @@ i.fab:hover {
   padding: 0.5rem 2rem 0.5rem 2rem;
   border: 1px solid #D8D8D8;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor-botones .boton:nth-child(1) {
     margin: 2rem 0rem 2rem 0;
   }
@@ -397,7 +397,7 @@ i.fab:hover {
   padding: 0.5rem 1.9rem 0.5rem 1.9rem;
   background-color: white;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor-botones .boton:nth-child(2) {
     margin: 2rem 0 2rem 0rem;
   }
@@ -417,7 +417,7 @@ i.fab:hover {
     font-family: Raleway;
   }
   .conocemas .izquierda {
-    background-image: url("../imagenes_pinturas/imper.jpg");
+    background-image: url("../imagenes_impermeabilizantes/pintor.jpg");
     flex: 50%;
     background-size: cover;
     display: flex;
@@ -444,7 +444,7 @@ i.fab:hover {
     text-decoration: none;
   }
   .conocemas .derecha {
-    background-image: url("../imagenes_pinturas/recub.jpg");
+    background-image: url("../imagenes_impermeabilizantes/recub.jpg");
     flex: 50%;
     background-size: cover;
     display: flex;
@@ -516,7 +516,7 @@ i.fab:hover {
   background-color: #1A1F33;
   color: white;
   letter-spacing: 2px;
-  font-family: gothamlight;
+  font-family: oratorstd;
 }
 @media only screen and (min-width: 700px) {
   .footer-grande {
@@ -603,4 +603,4 @@ p#ultimo {
   }
 }
 
-/*# sourceMappingURL=pinturas.css.map */
+/*# sourceMappingURL=recubrimiento.css.map */

@@ -23,6 +23,12 @@
   display: flex;
   overflow: hidden;
   background-color: #76A9CC;
+  height: 100px;
+}
+@media only screen and (min-width: 700px) {
+  .topnav {
+    height: 140px;
+  }
 }
 .topnav a {
   float: left;
@@ -38,10 +44,10 @@
   }
 }
 .topnav a:hover {
-  color: #76A9CC;
+  color: white;
 }
 .topnav .active {
-  color: #76A9CC;
+  color: white;
 }
 
 /* LOGO */
@@ -56,6 +62,11 @@
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 2;
+}
+@media only screen and (min-width: 700px) {
+  .logo {
+    width: 15rem;
+  }
 }
 
 /* BOTON DE MENU */
@@ -89,8 +100,8 @@
   }
 
   .logo {
-    width: 10rem;
-    margin-top: 3rem;
+    width: 15rem;
+    margin-top: 1rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
   }
