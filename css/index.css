@@ -47,7 +47,7 @@
 
 /* LOGO */
 .logo {
-  background-image: url("../../iconos_logos/logo.png");
+  background-image: url("../iconos_logos/logo.png");
   width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
@@ -178,6 +178,10 @@ i.fab:hover {
   color: white;
 }
 
+html, body {
+  height: 100%;
+}
+
 .portada {
   background-image: url("../imagenes_home/portada.jpg");
   background-size: cover;
@@ -191,7 +195,7 @@ i.fab:hover {
 @media only screen and (min-width: 700px) {
   .portada {
     background-image: url("../imagenes_home/portadam.jpg");
-    height: 66vw;
+    height: 100%;
   }
 }
 .portada p {
@@ -300,6 +304,7 @@ i.fab:hover {
 .contenedor-imagenes {
   display: flex;
   flex-direction: column;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes {
@@ -318,6 +323,7 @@ i.fab:hover {
   color: white;
   letter-spacing: 3.45px;
   font-family: Raleway;
+  transition: all 0.7s ease;
 }
 .contenedor-imagenes .imper .boton {
   border: white 2px solid;
@@ -326,6 +332,8 @@ i.fab:hover {
   padding-bottom: 0.25rem;
   letter-spacing: 3.45px;
   color: white;
+  text-decoration: none;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .imper .boton {
@@ -334,6 +342,7 @@ i.fab:hover {
 }
 .contenedor-imagenes .imper .mas {
   font-size: 32px;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .imper .mas {
@@ -346,11 +355,17 @@ i.fab:hover {
     order: 3;
     background-image: url("../imagenes_home/gotasXL.jpg");
     height: 43vw;
-    filter: brightness(0.7);
+    filter: brightness(1);
     transition: all 0.7s ease;
   }
+  .contenedor-imagenes .imper .boton, .contenedor-imagenes .imper .mas {
+    filter: opacity(0);
+  }
   .contenedor-imagenes .imper:hover {
-    filter: brightness(1);
+    filter: brightness(0.7);
+  }
+  .contenedor-imagenes .imper:hover .boton, .contenedor-imagenes .imper:hover .mas {
+    filter: opacity(1);
   }
 }
 .contenedor-imagenes .pinturas {
@@ -362,17 +377,20 @@ i.fab:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #808080;
+  color: white;
   letter-spacing: 3.45px;
   font-family: Raleway;
+  transition: all 0.7s ease;
 }
 .contenedor-imagenes .pinturas .boton {
-  border: #808080 2px solid;
+  border: white 2px solid;
   padding: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   letter-spacing: 3.45px;
-  color: #808080;
+  color: white;
+  text-decoration: none;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .pinturas .boton {
@@ -381,6 +399,7 @@ i.fab:hover {
 }
 .contenedor-imagenes .pinturas .mas {
   font-size: 32px;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .pinturas .mas {
@@ -393,11 +412,17 @@ i.fab:hover {
     order: 1;
     background-image: url("../imagenes_home/sillonXL.jpg");
     height: 43vw;
-    filter: brightness(0.7);
+    filter: brightness(1);
     transition: all 0.7s ease;
   }
+  .contenedor-imagenes .pinturas .boton, .contenedor-imagenes .pinturas .mas {
+    filter: opacity(0);
+  }
   .contenedor-imagenes .pinturas:hover {
-    filter: brightness(1);
+    filter: brightness(0.7);
+  }
+  .contenedor-imagenes .pinturas:hover .boton, .contenedor-imagenes .pinturas:hover .mas {
+    filter: opacity(1);
   }
 }
 @media only screen and (min-width: 700px) {
@@ -417,6 +442,7 @@ i.fab:hover {
   color: white;
   letter-spacing: 3.45px;
   font-family: Raleway;
+  transition: all 0.7s ease;
 }
 .contenedor-imagenes .adhesivos .boton {
   border: white 2px solid;
@@ -425,6 +451,8 @@ i.fab:hover {
   padding-bottom: 0.25rem;
   letter-spacing: 3.45px;
   color: white;
+  text-decoration: none;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .adhesivos .boton {
@@ -433,6 +461,7 @@ i.fab:hover {
 }
 .contenedor-imagenes .adhesivos .mas {
   font-size: 32px;
+  transition: all 0.7s ease;
 }
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .adhesivos .mas {
@@ -445,11 +474,17 @@ i.fab:hover {
     order: 2;
     background-image: url("../imagenes_home/zapatosXL.jpg");
     height: 43vw;
-    filter: brightness(0.7);
+    filter: brightness(1);
     transition: all 0.7s ease;
   }
+  .contenedor-imagenes .adhesivos .boton, .contenedor-imagenes .adhesivos .mas {
+    filter: opacity(0);
+  }
   .contenedor-imagenes .adhesivos:hover {
-    filter: brightness(1);
+    filter: brightness(0.7);
+  }
+  .contenedor-imagenes .adhesivos:hover .boton, .contenedor-imagenes .adhesivos:hover .mas {
+    filter: opacity(1);
   }
 }
 .contenedor-imagenes .recubrimientos {
@@ -466,6 +501,7 @@ i.fab:hover {
     color: white;
     letter-spacing: 3.45px;
     font-family: Raleway;
+    transition: all 0.7s ease;
   }
   .contenedor-imagenes .recubrimientos .boton {
     border: white 2px solid;
@@ -474,6 +510,8 @@ i.fab:hover {
     padding-bottom: 0.25rem;
     letter-spacing: 3.45px;
     color: white;
+    text-decoration: none;
+    transition: all 0.7s ease;
   }
 }
 @media only screen and (min-width: 700px) and (min-width: 700px) {
@@ -484,6 +522,7 @@ i.fab:hover {
 @media only screen and (min-width: 700px) {
   .contenedor-imagenes .recubrimientos .mas {
     font-size: 32px;
+    transition: all 0.7s ease;
   }
 }
 @media only screen and (min-width: 700px) and (min-width: 700px) {
@@ -497,70 +536,73 @@ i.fab:hover {
     order: 4;
     background-image: url("../imagenes_home/textura.jpg");
     height: 43vw;
-    filter: brightness(0.7);
+    filter: brightness(1);
     transition: all 0.7s ease;
   }
+  .contenedor-imagenes .recubrimientos .boton, .contenedor-imagenes .recubrimientos .mas {
+    filter: opacity(0);
+  }
   .contenedor-imagenes .recubrimientos:hover {
-    filter: brightness(1);
+    filter: brightness(0.7);
+  }
+  .contenedor-imagenes .recubrimientos:hover .boton, .contenedor-imagenes .recubrimientos:hover .mas {
+    filter: opacity(1);
   }
 }
 
-.contenedor-botones {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: gothamlight;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor-botones {
-    flex-direction: row;
-    font-size: 20px;
-  }
-}
-.contenedor-botones .boton {
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-.contenedor-botones .boton:nth-child(1) {
-  margin: 3rem 0 1rem 0;
-  background-color: #76A9CC;
-  color: white;
-  padding: 0.5rem 2.55rem 0.5rem 2.55rem;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor-botones .boton:nth-child(1) {
-    margin: 5rem 2rem 5rem 0;
-  }
-  .contenedor-botones .boton:nth-child(1):hover {
-    background-color: white;
-    color: #76A9CC;
-    border: 1px #76A9CC solid;
-  }
-}
-.contenedor-botones .boton:nth-child(2) {
-  margin-bottom: 4rem;
-  color: #76A9CC;
-  border: 1px #76A9CC solid;
-  padding: 0.5rem 2.1rem 0.5rem 2.1rem;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor-botones .boton:nth-child(2) {
-    margin: 5rem 0 5rem 2rem;
-  }
-  .contenedor-botones .boton:nth-child(2):hover {
-    background-color: #76A9CC;
-    color: white;
-  }
-}
+/*
 
+.contenedor-botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: gothamlight;
+    @media only screen and (min-width: 700px){
+        flex-direction: row;
+        font-size: 20px;
+    }
+    .boton{
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:nth-child(1){
+            margin: 3rem 0 1rem 0;
+            background-color: $azul;
+            color: white;
+            padding: 0.5rem 2.55rem 0.5rem 2.55rem;
+            
+            @media only screen and (min-width: 700px){
+                margin: 5rem 2rem 5rem 0;
+                &:hover{
+                    background-color: white;
+                    color: $azul;
+                    border: 1px $azul solid;
+                }
+            }
+        }
+        &:nth-child(2){
+            margin-bottom: 4rem;
+            color:$azul;
+            border: 1px $azul solid;
+            padding: 0.5rem 2.1rem 0.5rem 2.1rem;
+            @media only screen and (min-width: 700px){
+                margin: 5rem 0 5rem 2rem;
+                &:hover{
+                    background-color: $azul;
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+}*/
 .dispreh {
   background-image: url("../imagenes_home/dispreh.png");
   height: 100vw;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  font-family: oratorstd;
+  font-family: Raleway;
   align-items: center;
   justify-content: center;
   font-size: 26px;
@@ -584,11 +626,17 @@ i.fab:hover {
   color: #B89B95;
   border: #B89B95 1px solid;
   padding: 0 1rem 0rem 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 @media only screen and (min-width: 900px) {
   .dispreh a {
     font-size: 2.5vw;
   }
+}
+.dispreh a:hover {
+  background-color: #B89B95;
+  color: white;
 }
 
 .seccion3 {
@@ -689,11 +737,25 @@ i.fab:hover {
   background-image: url("../imagenes_home/rodillo.jpg");
   background-size: cover;
   height: 48vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .rodillo {
     background-image: url("../imagenes_home/rodilloXL.jpg");
-    height: 43vw;
+    height: 30vw;
+    background-attachment: fixed;
+  }
+}
+
+#logo-rodillo {
+  height: 60%;
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  #logo-rodillo {
+    display: block;
   }
 }
 
@@ -719,7 +781,7 @@ i.fab:hover {
   }
 }
 .footer-movil .logo-blanco {
-  background-image: url("../../iconos_logos/logo-footer.png");
+  background-image: url("../iconos_logos/logo-footer.png");
   width: 8rem;
   height: 90px;
   /* margin: 2rem, 2rem; */
@@ -735,37 +797,97 @@ i.fab:hover {
   padding-top: 2rem;
 }
 
-.footer-xl {
+.footer-grande {
   display: none;
+  /* height: 260px; */
+  background-color: #1A1F33;
+  color: white;
+  letter-spacing: 2px;
+  font-family: oratorstd;
 }
 @media only screen and (min-width: 700px) {
-  .footer-xl {
-    background-color: #76A9CC;
-    color: white;
+  .footer-grande {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 13rem;
-  }
-  .footer-xl .enlaces {
-    display: flex;
-    justify-content: space-around;
-  }
-  .footer-xl a {
-    color: white;
-  }
-  .footer-xl .abajo {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .footer-xl .abajo .estimado {
-    padding-left: 23rem;
-    padding-right: 5rem;
   }
 }
+.footer-grande a {
+  color: white;
+}
+.footer-grande .col-izquierda {
+  font-size: 0.625rem;
+  flex-basis: 30%;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.footer-grande .col-izquierda p {
+  line-height: 1.7rem;
+  padding-top: 2rem;
+}
+.footer-grande .col-izquierda .logo-blanco {
+  background-image: url("../iconos_logos/logo.png");
+  width: 16rem;
+  height: 90px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 0.73rem;
+  padding-bottom: 2.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.footer-grande .col-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 40%;
+}
+.footer-grande .col-centro a i {
+  padding-top: 6.5rem;
+}
+.footer-grande .col-centro .flecha {
+  padding-top: 20px;
+}
+.footer-grande .col-centro .regresar {
+  font-size: 12px;
+  padding-top: 35px;
+  letter-spacing: 1px;
+}
+.footer-grande .col-centro .legal {
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding-top: 4.3rem;
+}
+.footer-grande .col-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 30%;
+  font-size: 6.5px;
+}
+.footer-grande .col-derecha .contacto-footer {
+  font-size: 10.5px;
+  justify-content: center;
+  padding-top: 154px;
+  text-align: justify;
+  text-align: center;
+}
 
-#estimado {
-  height: 1rem;
+p#ultimo {
+  padding-top: 50.5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-izquierda {
+    padding-left: 4rem;
+  }
+
+  .contacto-footer {
+    padding-top: 154px;
+  }
+
+  p#ultimo {
+    padding-top: 50.5px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
