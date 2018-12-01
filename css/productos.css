@@ -18,6 +18,7 @@
 }
 /* BARRA DE NAVEGACION */
 .topnav {
+  letter-spacing: 3px;
   font-family: oratorstd;
   justify-content: space-between;
   display: flex;
@@ -40,7 +41,7 @@
 }
 @media only screen and (min-width: 1500px) {
   .topnav a {
-    font-size: 27px;
+    font-size: 17px;
   }
 }
 .topnav a:hover {
@@ -93,7 +94,8 @@
   }
 
   .topnav-right {
-    display: flex;
+    display: block;
+    padding-top: 2.2rem;
     float: right;
     padding-right: 2rem;
     align-items: center;
@@ -552,7 +554,7 @@ i.fab:hover {
 }
 .seccion2 .derecha .unboton {
   font-size: 20px;
-  background-color: #76A9CC;
+  background-color: #F2F2F2;
   padding: 0.75rem 3rem 0.75rem 3rem;
   text-align: center;
   margin-left: auto;
@@ -560,13 +562,13 @@ i.fab:hover {
   margin-bottom: 7vw;
   margin-top: 2rem;
   display: none;
-  color: #f2f2f2;
+  color: #76A9CC;
   transition: all 0.5s ease;
   text-decoration: none;
 }
 .seccion2 .derecha .unboton:hover {
-  background-color: #F2F2F2;
-  color: #76A9CC;
+  background-color: #76A9CC;
+  color: #F2F2F2;
 }
 @media only screen and (min-width: 900px) {
   .seccion2 .derecha .unboton {
@@ -744,8 +746,8 @@ i.fab:hover {
   align-items: center;
   justify-content: space-evenly;
   font-family: gothamlight;
-  margin: 2rem;
-  font-size: 12px;
+  margin: 2rem 0;
+  font-size: 10px;
 }
 @media only screen and (min-width: 900px) {
   .contenedor-botones {

@@ -27,7 +27,7 @@ $gris: #808080;
     justify-content: space-between;
     display: flex;
     overflow: hidden;
-    background-color: $azul;
+    background-color: #373125;
     height: 100px;
     @media only screen and (min-width: 700px){
         height: 140px;
@@ -190,13 +190,13 @@ i.fab {
 }
 
 .portada{
-    background-image: url("../imagenes_impermeabilizantes/portadaS.jpg");
+    background-image: url("../imagenes_adhesivos/portadaS.jpg");
     background-size: cover;
-    height: 79vw;
+    height: 94vw;
     @media only screen and (min-width: 600px){
-        background-image: url("../imagenes_impermeabilizantes/portada.jpg");
+        background-image: url("../imagenes_adhesivos/portada.jpg");
         background-size: cover;
-        height: 45vw;
+        height: 49vw;
     }
 }
 
@@ -245,14 +245,14 @@ i.fab {
     }
     .izquierda{
         flex: 45%;
-        background-image: url("../imagenes_impermeabilizantes/imperS.jpg");
+        background-image: url("../imagenes_adhesivos/pisoS.jpg");
         background-size: cover;
         height: 56vw;
         @media only screen and (min-width: 900px) {
             margin: 3vw;
             background-size: contain;
             background-repeat: no-repeat;
-            background-image: url("../imagenes_impermeabilizantes/imper.jpg");
+            background-image: url("../imagenes_adhesivos/piso.jpg");
             height: 45vw;
         }
     }
@@ -443,10 +443,10 @@ i.fab {
         display: flex;
         font-family: Raleway;
         .izquierda{
-            @include imagen("../imagenes_impermeabilizantes/pintor.jpg");           
+            @include imagen("../imagenes_adhesivos/pintor.jpg");           
         }
         .derecha{
-            @include imagen("../imagenes_impermeabilizantes/recub.jpg");
+            @include imagen("../imagenes_adhesivos/recub.jpg");
 
         }
     }

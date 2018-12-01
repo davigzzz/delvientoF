@@ -22,12 +22,16 @@ $gris: #808080;
 }
 /* BARRA DE NAVEGACION */
 .topnav {
+    letter-spacing: 3px;
     font-family: oratorstd;
     justify-content: space-between;
     display: flex;
     overflow: hidden;
-    background-color: $azul;
-    
+    background-color: #AA7C39;
+    height: 100px;
+    @media only screen and (min-width: 700px){
+        height: 140px;
+    }
     a{
         float: left;
         color: black;
@@ -36,15 +40,15 @@ $gris: #808080;
         text-decoration: none;
         font-size: 17px;
         @media only screen and (min-width: 1500px){
-            font-size: 27px;
+            font-size: 17px;
         }
         &:hover{
-            color: $azul;
+            color: white;
         }
         
     }
     .active{
-        color: $azul;
+        color: white;
     }}
       /* LOGO */
     .logo{
@@ -58,6 +62,9 @@ $gris: #808080;
         background-size: 100%;
         background-repeat: no-repeat;
         z-index: 2;
+        @media only screen and (min-width: 700px){
+            width: 15rem;
+        }
     }
     /* BOTON DE MENU */
     /* contenedor */
@@ -84,14 +91,15 @@ $gris: #808080;
     }
     
     .topnav-right{
-        display: flex;
+        display: block;
         float: right;  
         padding-right: 2rem;    
+        padding-top: 2.2rem;
         align-items: center;
     }
     .logo{
-        width: 10rem;
-        margin-top: 3rem;
+        width: 15rem;
+        margin-top: 1rem;
         margin-left: 3rem;
         margin-bottom: 3rem;
     }
@@ -182,11 +190,11 @@ i.fab {
 }
 
 .portada{
-    background-image: url("../imagenes_impermeabilizantes/portadaS.jpg");
+    background-image: url("../imagenes_recubrimientos/portadaS.jpg");
     background-size: cover;
     height: 79vw;
     @media only screen and (min-width: 600px){
-        background-image: url("../imagenes_impermeabilizantes/portada.jpg");
+        background-image: url("../imagenes_recubrimientos/portada.jpg");
         background-size: cover;
         height: 45vw;
     }
@@ -435,10 +443,10 @@ i.fab {
         display: flex;
         font-family: Raleway;
         .izquierda{
-            @include imagen("../imagenes_impermeabilizantes/pintor.jpg");           
+            @include imagen("../imagenes_recubrimientos/pintor.jpg");           
         }
         .derecha{
-            @include imagen("../imagenes_impermeabilizantes/recub.jpg");
+            @include imagen("../imagenes_recubrimientos/adhesivos.jpg");
 
         }
     }

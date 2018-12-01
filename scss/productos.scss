@@ -22,6 +22,7 @@ $gris: #808080;
 }
 /* BARRA DE NAVEGACION */
 .topnav {
+    letter-spacing: 3px;
     font-family: oratorstd;
     justify-content: space-between;
     display: flex;
@@ -40,7 +41,7 @@ $gris: #808080;
         text-decoration: none;
         font-size: 17px;
         @media only screen and (min-width: 1500px){
-            font-size: 27px;
+            font-size: 17px;
         }
         &:hover{
             color: white;
@@ -91,7 +92,8 @@ $gris: #808080;
     }
     
     .topnav-right{
-        display: flex;
+        display: block;
+        padding-top: 2.2rem;
         float: right;  
         padding-right: 2rem;    
         align-items: center;
@@ -467,7 +469,7 @@ i.fab {
 }
 
 .seccion2{
-    @include seccion(33%, 33%, #C85A2C, #C85A2C, #C85A2C, #C85A2C, $azul, #F2F2F2, #f2f2f2);
+    @include seccion(33%, 33%, #C85A2C, #C85A2C, #C85A2C, #C85A2C, #F2F2F2, $azul, $azul);
 }
 #recub{
     background-image: url("../imagenes_productos/recub.jpg");
@@ -501,8 +503,8 @@ i.fab {
     align-items: center;
     justify-content: space-evenly;
     font-family: gothamlight;
-    margin: 2rem;
-    font-size: 12px;
+    margin: 2rem 0;
+    font-size: 10px;
     @media only screen and (min-width: 900px){
         display: none;
     }

@@ -23,7 +23,7 @@
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #AA7C39;
+  background-color: #373125;
   height: 100px;
 }
 @media only screen and (min-width: 700px) {
@@ -191,15 +191,15 @@ i.fab:hover {
 }
 
 .portada {
-  background-image: url("../imagenes_recubrimientos/portadaS.jpg");
+  background-image: url("../imagenes_adhesivos/portadaS.jpg");
   background-size: cover;
-  height: 79vw;
+  height: 94vw;
 }
 @media only screen and (min-width: 600px) {
   .portada {
-    background-image: url("../imagenes_recubrimientos/portada.jpg");
+    background-image: url("../imagenes_adhesivos/portada.jpg");
     background-size: cover;
-    height: 45vw;
+    height: 49vw;
   }
 }
 
@@ -252,7 +252,7 @@ i.fab:hover {
 }
 .seccion .izquierda {
   flex: 45%;
-  background-image: url("../imagenes_impermeabilizantes/imperS.jpg");
+  background-image: url("../imagenes_adhesivos/pisoS.jpg");
   background-size: cover;
   height: 56vw;
 }
@@ -261,7 +261,7 @@ i.fab:hover {
     margin: 3vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../imagenes_impermeabilizantes/imper.jpg");
+    background-image: url("../imagenes_adhesivos/piso.jpg");
     height: 45vw;
   }
 }
@@ -430,7 +430,7 @@ i.fab:hover {
     font-family: Raleway;
   }
   .conocemas .izquierda {
-    background-image: url("../imagenes_recubrimientos/pintor.jpg");
+    background-image: url("../imagenes_adhesivos/pintor.jpg");
     flex: 50%;
     background-size: cover;
     display: flex;
@@ -457,7 +457,7 @@ i.fab:hover {
     text-decoration: none;
   }
   .conocemas .derecha {
-    background-image: url("../imagenes_recubrimientos/adhesivos.jpg");
+    background-image: url("../imagenes_adhesivos/recub.jpg");
     flex: 50%;
     background-size: cover;
     display: flex;
@@ -616,4 +616,4 @@ p#ultimo {
   }
 }
 
-/*# sourceMappingURL=recubrimiento.css.map */
+/*# sourceMappingURL=adhesivos.css.map */

@@ -22,6 +22,7 @@ $gris: #808080;
 }
 /* BARRA DE NAVEGACION */
 .topnav {
+    letter-spacing: 3px;
     font-family: oratorstd;
     justify-content: space-between;
     display: flex;
@@ -39,15 +40,15 @@ $gris: #808080;
         text-decoration: none;
         font-size: 17px;
         @media only screen and (min-width: 1500px){
-            font-size: 27px;
+            font-size: 17px;
         }
         &:hover{
-            color: $azul;
+            color: white;
         }
         
     }
     .active{
-        color: $azul;
+        color: white;
     }}
       /* LOGO */
     .logo{
@@ -90,9 +91,10 @@ $gris: #808080;
     }
     
     .topnav-right{
-        display: flex;
+        display: block;
         float: right;  
         padding-right: 2rem;    
+        padding-top: 2.2rem;
         align-items: center;
     }
     .logo{

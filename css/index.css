@@ -18,6 +18,7 @@
 }
 /* BARRA DE NAVEGACION */
 .topnav {
+  letter-spacing: 3px;
   font-family: oratorstd;
   justify-content: space-between;
   display: flex;
@@ -40,14 +41,14 @@
 }
 @media only screen and (min-width: 1500px) {
   .topnav a {
-    font-size: 27px;
+    font-size: 17px;
   }
 }
 .topnav a:hover {
-  color: #76A9CC;
+  color: white;
 }
 .topnav .active {
-  color: #76A9CC;
+  color: white;
 }
 
 /* LOGO */
@@ -93,9 +94,10 @@
   }
 
   .topnav-right {
-    display: flex;
+    display: block;
     float: right;
     padding-right: 2rem;
+    padding-top: 2.2rem;
     align-items: center;
   }
 
