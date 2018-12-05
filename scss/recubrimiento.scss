@@ -71,6 +71,9 @@ $gris: #808080;
     .btn-menu{
         margin: 1rem 2rem;
         padding-top: 1.1rem;
+        @media only screen and (min-width: 700px){
+            margin: 2rem;
+        }
         #menu{
             height: 1rem;
         }
@@ -176,16 +179,16 @@ $gris: #808080;
 /* Encerrar iconos en círculos */
 i.fab {
   /* margin: 0.5em; */
-    color: #8F8F8F;
-    border: 1px solid #929292;
+    color: white;
+    border: 1px solid white;
     border-radius: 50%;
     padding: 0.5em;
     transition: all .5s ease;
     width: 2.1em;
     text-align: center; 
     &:hover{
-        background: #929292;
-        color: white;
+        background: white;
+        color: #AA7C39;
     }
 }
 
@@ -380,6 +383,7 @@ i.fab {
             color: white;
             padding: 0.5rem 2rem 0.5rem 2rem;
             border: 1px solid #D8D8D8;
+            order: 2;
             @media only screen and (min-width: 900px){
                 margin: 2rem 0rem 2rem 0;
                 &:hover{

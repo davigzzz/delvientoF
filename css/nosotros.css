@@ -12,10 +12,14 @@
   font-family: gothamBook;
   src: url("../fuentes/Gotham Book Regular.otf");
 }
-@font-face {
-  font-family: painter;
-  src: url("../fuentes/SignPainter.ttf");
+body {
+  margin: 0;
+  font-family: Arial;
+  letter-spacing: 3px;
+  overflow-x: hidden;
 }
+
+/* MENU *************************************************/
 /* BARRA DE NAVEGACION */
 .topnav {
   letter-spacing: 3px;
@@ -23,7 +27,7 @@
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #C81F28;
+  background-color: #333333;
   height: 100px;
 }
 @media only screen and (min-width: 700px) {
@@ -33,7 +37,7 @@
 }
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 2rem 1.5rem;
   text-decoration: none;
@@ -45,10 +49,10 @@
   }
 }
 .topnav a:hover {
-  color: white;
+  color: #929292;
 }
 .topnav .active {
-  color: white;
+  color: #929292;
 }
 
 /* LOGO */
@@ -176,7 +180,7 @@
   margin-top: 30px;
 }
 .overlay .overlay-content a .active, .overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
-  color: #929292;
+  color: #333333;
 }
 
 /* Encerrar iconos en círculos */
@@ -192,294 +196,200 @@ i.fab {
 }
 i.fab:hover {
   background: white;
-  color: #C81F28;
+  color: #929292;
 }
 
-.portada {
-  background-image: url("../imagenes_pinturas/portadaS.jpg");
+.portada-parallax {
+  background-image: url("../imagenes_nosotros/rodillo.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 93vw;
-}
-@media only screen and (min-width: 600px) {
-  .portada {
-    background-image: url("../imagenes_pinturas/portada.jpg");
-    background-size: cover;
-    height: 45vw;
-  }
-}
-
-.descripcion {
-  margin: 2rem;
-}
-@media only screen and (min-width: 900px) {
-  .descripcion {
-    background-image: url(../imagenes_pinturas/fondo.png);
-    background-size: 46vw;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: -14vw;
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .descripcion {
-    height: 13vw;
-  }
-}
-.descripcion h4 {
-  font-family: Raleway;
-}
-@media only screen and (min-width: 900px) {
-  .descripcion h4 {
-    padding-top: 3rem;
-  }
-}
-.descripcion p {
-  font-family: gothamlight;
-  text-align: justify;
-}
-@media only screen and (min-width: 900px) {
-  .descripcion p {
-    margin-right: 52vw;
-  }
-}
-
-#plata {
-  background-image: url("../imagenes_pinturas/plata.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #plata {
-    background-image: url("../imagenes_pinturas/plataL.jpg");
-  }
-}
-
-#oro {
-  background-image: url("../imagenes_pinturas/oro.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #oro {
-    background-image: url("../imagenes_pinturas/oroL.jpg");
-  }
-}
-
-#platino {
-  background-image: url("../imagenes_pinturas/platino.jpg");
-}
-@media only screen and (min-width: 700px) {
-  #platino {
-    background-image: url("../imagenes_pinturas/platinoL.jpg");
-  }
-}
-
-#ultimo {
-  margin-bottom: 0;
-}
-
-.contenedor {
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor {
-    flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-}
-.contenedor .imagen {
-  flex: 100%;
-  height: 56vw;
-  background-size: cover;
-  background-image: url("../imagenes_pinturas/bronce.jpg");
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .imagen {
-    background-image: url("../imagenes_pinturas/bronceL.jpg");
-  }
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .imagen {
-    flex: 33%;
-    height: 38vw;
-  }
-}
-.contenedor .texto {
-  flex: 67%;
-  font-family: gothamlight;
-  margin: 2rem;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto p {
-    margin-left: 3rem;
-  }
-}
-.contenedor .texto h4 {
   display: none;
 }
-@media only screen and (min-width: 700px) {
-  .contenedor .texto h4 {
+
+@media only screen and (min-width: 1100px) {
+  .portada-movil {
+    display: none;
+  }
+
+  .portada-parallax {
     display: block;
-    font-family: Raleway;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
   }
 }
-.contenedor .texto .parrafo {
+/* EMPIEZA PRIMERA SECCIÓN MÓVIL */
+.texto1, .texto2, .texto1-2 {
+  font-family: gothamlight;
+}
+
+.texto1 p {
+  padding-top: 31px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  font-size: 14.07px;
+  letter-spacing: 2.56px;
+}
+
+.texto2 p {
+  padding-top: 31px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  font-size: 14.07px;
+  letter-spacing: 2.56px;
+}
+
+.texto1-2 {
   display: none;
 }
-@media only screen and (min-width: 700px) {
-  .contenedor .texto .parrafo {
-    display: block;
-    margin-bottom: 4rem;
+
+@media only screen and (min-width: 768px) {
+  .texto1 p, .texto2 p {
+    font-size: 14px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .contenedor .texto .parrafo {
-    margin-right: 15vw;
+  .texto1 {
+    flex: 100%;
   }
-}
-.contenedor .texto .caracteristicas {
-  display: flex;
-}
-.contenedor .texto .caracteristicas p {
-  flex: 65%;
-}
-.contenedor .texto .caracteristicas .botones {
-  flex: 35%;
-}
 
-#botonesL {
-  display: none;
-}
-@media only screen and (min-width: 700px) {
-  #botonesL {
+  .texto1-2 {
+    display: block;
+    flex: 50%;
+  }
+
+  .texto1 p, .texto2 p {
+    font-size: 25px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  /* .texto1-2 p{
+  padding-top: 31px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  font-size: 14px;
+  letter-spacing: 2.56px;
+  } */
+  .textos {
     display: flex;
-    flex-direction: column;
-    flex: 35%;
+  }
+
+  .imagen2-movil {
+    padding-left: 10.16%;
+    padding-right: 10.16%;
   }
 }
-
-.contenedor-botones {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: gothamlight;
-  margin-bottom: 2rem;
-  font-size: 10px;
+.cap {
+  text-align: center;
+  font-family: Raleway;
 }
-@media only screen and (min-width: 900px) {
-  .contenedor-botones {
+
+.cap p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cap p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cap p {
+    font-size: 3rem;
+    margin-bottom: 8.1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fila {
+    display: flex;
+  }
+
+  .sillones {
+    flex: 50%;
+    transition: all 0.5s ease;
+  }
+}
+.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#mujer {
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-sillones:hover .image {
+  filter: brightness(0.5);
+}
+
+.container-sillones:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 32px;
+  padding: 16px 32px;
+}
+
+.producto {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 1200px) {
+  .sillones:hover .image {
+    filter: brightness(0.5);
+  }
+
+  .sillones:hover .middle {
+    opacity: 1;
+  }
+
+  .producto {
     display: none;
   }
 }
-@media only screen and (min-width: 600px) {
-  .contenedor-botones {
-    font-size: 16px;
-  }
-}
-.contenedor-botones .boton {
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-.contenedor-botones .boton:nth-child(1) {
-  background-color: #D8D8D8;
-  color: white;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  border: 1px solid #D8D8D8;
-  order: 2;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor-botones .boton:nth-child(1) {
-    margin: 2rem 0rem 2rem 0;
-  }
-  .contenedor-botones .boton:nth-child(1):hover {
-    background-color: white;
-    color: #D8D8D8;
-    border: 1px #D8D8D8 solid;
-  }
-}
-.contenedor-botones .boton:nth-child(2) {
-  color: #D8D8D8;
-  border: 1px #D8D8D8 solid;
-  padding: 0.5rem 1.9rem 0.5rem 1.9rem;
-  background-color: white;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor-botones .boton:nth-child(2) {
-    margin: 2rem 0 2rem 0rem;
-  }
-  .contenedor-botones .boton:nth-child(2):hover {
-    background-color: #D8D8D8;
-    color: white;
-  }
-}
-
-.conocemas {
-  display: none;
-  height: 30vw;
-}
-@media only screen and (min-width: 700px) {
-  .conocemas {
-    display: flex;
-    font-family: Raleway;
-  }
-  .conocemas .izquierda {
-    background-image: url("../imagenes_pinturas/imper.jpg");
-    flex: 50%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    filter: brightness(0.6);
-    transition: all 0.5s ease;
-  }
-  .conocemas .izquierda:hover {
-    filter: brightness(1);
-  }
-  .conocemas .izquierda .nombre {
-    font-size: 2vw;
-    margin-top: 17%;
-    color: white;
-    text-decoration: none;
-    border: 2px white solid;
-    padding: 0 1rem 0 1rem;
-  }
-  .conocemas .izquierda .mas {
-    font-size: 3vw;
-    color: white;
-    text-decoration: none;
-  }
-  .conocemas .derecha {
-    background-image: url("../imagenes_pinturas/recub.jpg");
-    flex: 50%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    filter: brightness(0.6);
-    transition: all 0.5s ease;
-  }
-  .conocemas .derecha:hover {
-    filter: brightness(1);
-  }
-  .conocemas .derecha .nombre {
-    font-size: 2vw;
-    margin-top: 17%;
-    color: white;
-    text-decoration: none;
-    border: 2px white solid;
-    padding: 0 1rem 0 1rem;
-  }
-  .conocemas .derecha .mas {
-    font-size: 3vw;
-    color: white;
-    text-decoration: none;
-  }
-}
-
+/* COMIENZA FOOTER */
+/* Footer movil */
 .footer-movil {
   color: white;
   font-size: 12px;
@@ -524,7 +434,7 @@ i.fab:hover {
   background-color: #1A1F33;
   color: white;
   letter-spacing: 2px;
-  font-family: gothamlight;
+  font-family: oratorstd;
 }
 @media only screen and (min-width: 700px) {
   .footer-grande {
@@ -611,4 +521,4 @@ p#ultimo {
   }
 }
 
-/*# sourceMappingURL=pinturas.css.map */
+/*# sourceMappingURL=nosotros.css.map */

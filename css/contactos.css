@@ -2,15 +2,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
   font-family: oratorstd;
-  src: url("OratorStd.otf") format("opentype");
+  src: url("../fuentes/OratorStd.otf") format("opentype");
 }
 @font-face {
   font-family: gothamlight;
-  src: url("Gotham-Light.otf") format("opentype");
+  src: url("../fuentes/Gotham-Light.otf") format("opentype");
 }
 @font-face {
   font-family: gothamBook;
-  src: url("Gotham Book Regular.otf");
+  src: url("../fuentes/Gotham Book Regular.otf");
 }
 * {
   box-sizing: border-box;
@@ -37,80 +37,80 @@ body {
 /* MENU *************************************************/
 /* BARRA DE NAVEGACION */
 .topnav {
+  letter-spacing: 3px;
+  font-family: oratorstd;
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #E3C7C0;
+  background-color: #E2C7C0;
   height: 100px;
+}
+@media only screen and (min-width: 700px) {
+  .topnav {
+    height: 140px;
+  }
 }
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 2rem 1.5rem;
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a .active {
-  color: #C4AEAB;
+@media only screen and (min-width: 1500px) {
+  .topnav a {
+    font-size: 17px;
+  }
 }
 .topnav a:hover {
-  color: #C4AEAB;
+  color: white;
 }
-
-/* propiedades */
-.topnav-right {
-  display: none;
+.topnav .active {
+  color: white;
 }
 
 /* LOGO */
 .logo {
-  background-image: url("icono.svg");
-  width: 11rem;
+  background-image: url("../iconos_logos/logo.png");
+  width: 10rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
-  margin-top: 1.3rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   padding-bottom: 2.2rem;
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 2;
 }
-
-@media only screen and (min-width: 768px) {
-  .topnav {
-    height: 140px;
-  }
-
+@media only screen and (min-width: 700px) {
   .logo {
-    margin: 2rem, 2rem;
+    width: 15rem;
   }
 }
-/* 
-  @media only screen and (min-width: 1300px){
-    .topnav{
-        height: 160px;
-    }
-  }
-   */
+
 /* BOTON DE MENU */
 /* contenedor */
 .btn-menu {
   margin: 1rem 2rem;
-  padding-top: 1.3rem;
+  padding-top: 1.1rem;
+}
+@media only screen and (min-width: 700px) {
+  .btn-menu {
+    margin: 2rem;
+  }
+}
+.btn-menu #menu {
+  height: 1rem;
+}
+
+/* desaparecerlo en movil */
+.topnav-right {
+  display: none;
 }
 
 /* boton */
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
-  .logo {
-    width: 14rem;
-  }
-
-  .btn-menu {
-    padding-top: 2rem;
-  }
-}
 /* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
 @media only screen and (min-width: 1100px) {
   .btn-menu {
@@ -120,12 +120,16 @@ body {
   .topnav-right {
     display: block;
     float: right;
-    padding-top: 2.2rem;
     padding-right: 2rem;
+    padding-top: 2.2rem;
+    align-items: center;
   }
 
   .logo {
-    width: 14rem;
+    width: 15rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
   }
 
   .iconos a {
@@ -134,11 +138,11 @@ body {
     padding-right: 0.7rem;
   }
 }
-/* @media only screen and (min-width: 1300px){
-    .topnav-right{
-        padding-top: 3.65rem;
-    }
-} */
+@media only screen and (min-width: 1100px) and (min-width: 1500px) {
+  .iconos a {
+    font-size: 20px;
+  }
+}
 /* MENU Y SU ANIMACION */
 .overlay {
   height: 100%;
@@ -148,19 +152,10 @@ body {
   top: 0;
   left: 0;
   background-color: #28324D;
-  background-color: #28324D;
   overflow-x: hidden;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -169,34 +164,40 @@ body {
   display: block;
   transition: 0.3s;
 }
-
-.overlay .overlay-content a.active {
-  color: #929292;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #929292;
-}
-
 .overlay .closebtn {
   position: absolute;
+  padding-top: 0px;
+  height: 86px;
   right: 0px;
-  font-size: 60px;
-  padding-right: 20px;
+  font-size: 54px;
+  padding-right: 34px;
 }
-
-i.fas {
-  color: white;
-}
-
-/* TAMAÑO DE BOTON DE CERRADO DEL MENU */
 @media only screen and (min-width: 768px) and (max-width: 899px) {
-  .overlay .closebtn {
+  .overlay .closebtn .overlay .closebtn {
     position: absolute;
     right: 45px;
     font-size: 80px;
   }
 }
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .iconos-menu .fa-1x {
+  font-size: 0.6em;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a .active, .overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
+  color: #929292;
+}
+
 /* Encerrar iconos en círculos */
 i.fab {
   /* margin: 0.5em; */
@@ -224,7 +225,7 @@ b {
 
 h1 {
   font-family: Raleway;
-  font-size: 28.74px;
+  font-size: 24.74px;
 }
 
 /* Cambiar orden de las cosas en móviles (primeros tres elementos después de header)*/
@@ -268,7 +269,7 @@ h1 {
 }
 
 .parrafo {
-  font-size: 15.07px;
+  font-size: 14.07px;
 }
 
 .right {
@@ -289,7 +290,7 @@ h1 {
 
 .column.right div a {
   font-family: gothamlight;
-  font-size: 0.9rem;
+  font-size: 12px;
   color: black;
 }
 
@@ -306,7 +307,7 @@ h1 {
 
   .right {
     width: 100%;
-    height: 276px;
+    height: 250px;
   }
 
   .left {
@@ -314,7 +315,7 @@ h1 {
   }
 
   .left .titulo {
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     padding-left: 1rem;
   }
 
@@ -332,11 +333,15 @@ h1 {
   }
 
   .right div:last-child {
-    padding-bottom: 55px;
+    padding-bottom: 30px;
   }
 
   .right div:nth-child(3) {
     display: none;
+  }
+
+  .column.right div a {
+    font-size: 14px;
   }
 }
 /* Datos de contacto tablet */
@@ -385,6 +390,16 @@ h1 {
   .right div:nth-child(5) {
     padding-top: 90px;
     order: 3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .left p {
+    font-size: 14.07px;
+    letter-spacing: 0;
+  }
+
+  .left {
+    height: 230px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 732px) {
@@ -497,7 +512,7 @@ h1 {
 
 /* IMAGEN DE SILLAS, RESPONSIVE */
 #sillas {
-  content: url("sillas.png");
+  content: url("../imagenes_contacto/sillas.jpg");
 }
 
 #movil {
@@ -509,11 +524,11 @@ h1 {
   #sillas {
     display: none;
     visibility: hidden;
-    content: url("silla_movil.png");
+    content: url("../imagenes_contacto/sillasS.jpg");
   }
 
   #movil {
-    content: url("silla_movil.png");
+    content: url("../imagenes_contacto/sillasS.jpg");
     display: block;
   }
 }
@@ -529,11 +544,14 @@ h1 {
 .contactamos h1 {
   padding-left: 3rem;
   padding-top: 4.5rem;
+  font-size: 24.74px;
 }
 
 .contactamos p {
   padding: 3rem;
   padding-top: 2.5rem;
+  font-size: 14.07px;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -545,7 +563,7 @@ h1 {
   }
 
   .contactamos {
-    height: 220px;
+    height: 196px;
     display: inline-block;
   }
 
@@ -562,46 +580,38 @@ h1 {
   }
 }
 /* INICIA IMAGEN CON FORMULARIO */
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-  display: inline-block;
-  width: 100%;
-}
-
-.textura {
-  object-fit: contain;
-}
-
-.right2 {
-  width: 55%;
-}
-
-.left2 {
-  width: 45%;
-}
-
 /* IMAGEN DE TEXTURA */
-#textura {
-  content: url("textura.png");
+.seccion3 {
+  display: flex;
+  flex-direction: column;
 }
-
-#ipad {
-  display: none;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-  #textura {
-    content: url("textura_ipad.png");
+@media only screen and (min-width: 700px) {
+  .seccion3 {
+    flex-direction: row;
   }
 }
-@media only screen and (min-width: 600px) {
-  .row {
-    height: 600px;
+.seccion3 .pintor {
+  height: 100vw;
+  flex: 50%;
+  background-image: url("../imagenes_contacto/textura.jpg");
+  background-size: cover;
+}
+@media only screen and (min-width: 700px) {
+  .seccion3 .pintor {
+    background-attachment: fixed;
+    height: unset;
   }
 }
-/* texto del formulario */
-input[type=text] {
+.seccion3 .formulario {
+  flex: 100%;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 700px) {
+  .seccion3 .formulario {
+    flex: 50%;
+  }
+}
+.seccion3 .formulario input[type=text] {
   letter-spacing: 3px;
   width: 80%;
   margin: 8px 0;
@@ -609,129 +619,69 @@ input[type=text] {
   border: none;
   color: #d9dddf;
   border-bottom: 1px solid #78797c;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
-
-::placeholder {
-  font-family: gothamlight;
-  color: #a7a0a0;
-  opacity: 1;
-  /* Firefox */
+@media only screen and (min-width: 700px) {
+  .seccion3 .formulario input[type=text] {
+    margin: 4vw;
+  }
 }
-
-/* formulario */
-.formulario {
-  /* padding-left: 5rem; */
-  font-family: gothamlight;
+.seccion3 .formulario input[type=text] .telefono {
+  margin-bottom: 1.75rem;
 }
-
-/* terminos bajo el formulario */
-.a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.b {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.terms {
-  font-family: gothamlight;
-  display: flex;
-  font-size: 12.37px;
-  text-align: center;
-  padding-top: 1rem;
-  font-family: gothamlight;
-  align-items: center;
-  justify-content: center;
-}
-
-.terms span {
-  font-family: gothamlight;
-}
-
-#icon-gota {
-  cursor: pointer;
-  background-image: url("gota copia.svg");
-  width: 0.7rem;
-  height: 15px;
-  margin-right: 0.9rem;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#icon-gota:hover {
-  background-image: url("gota-selecta.svg");
-}
-
-/* boton de formulario */
-input[type=submit] {
+.seccion3 .formulario input[type=submit] {
   align-items: center;
   align-content: center;
   margin-top: 1rem;
   font-size: 1rem;
   /* margin-left: 35%; */
   border: 1px solid;
-  border-color: #0071b0;
-  color: #0071b0;
+  border-color: #0071AE;
+  color: #0071AE;
   background: transparent;
   cursor: pointer;
   font-family: gothamlight;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   transition: all 0.5s ease;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-
-input[type=submit]:hover {
-  border-color: #0071b0;
+.seccion3 .formulario input[type=submit]:hover {
+  border-color: #0071AE;
   color: white;
-  background-color: #0071b0;
+  background-color: #0071AE;
+}
+.seccion3 .formulario .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion3 .formulario .b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.seccion3 .formulario .terms {
+  font-family: gothamlight;
+  display: flex;
+  font-size: 12.37px;
+  text-align: center;
+  font-family: gothamlight;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+.seccion3 .formulario .terms span {
+  font-family: gothamlight;
+}
+.seccion3 .formulario #gota {
+  height: 20px;
 }
 
-/* imagen y formulario para telefono */
-@media screen and (max-width: 600px) {
-  .formulario {
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-  }
-
-  .terms {
-    padding-top: 0rem;
-  }
-
-  input[type=submit] {
-    margin-bottom: 2rem;
-  }
-
-  .right2 {
-    width: 100%;
-    order: 1;
-  }
-
-  .left2 {
-    width: 100%;
-    order: 2;
-  }
-}
-/* modificacion de columnas con imagen y formulario para tablet */
-@media only screen and (min-width: 768px) and (max-width: 899px) {
-  .left2 {
-    width: 45%;
-  }
-
-  .right2 {
-    width: 55%;
-  }
-
-  .terms {
-    padding-top: 0rem;
-  }
-}
 /* ******************************************************** */
 /* para eliminar espacio entre divs que envuelven iframe */
 .grande {
@@ -779,7 +729,7 @@ iframe {
 }
 
 a i {
-  padding-top: 2.8rem;
+  padding-top: 2rem;
 }
 
 .footer-movil a {

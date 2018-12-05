@@ -76,6 +76,11 @@
   margin: 1rem 2rem;
   padding-top: 1.1rem;
 }
+@media only screen and (min-width: 700px) {
+  .btn-menu {
+    margin: 2rem;
+  }
+}
 .btn-menu #menu {
   height: 1rem;
 }
@@ -177,8 +182,8 @@
 /* Encerrar iconos en círculos */
 i.fab {
   /* margin: 0.5em; */
-  color: #8F8F8F;
-  border: 1px solid #929292;
+  color: white;
+  border: 1px solid white;
   border-radius: 50%;
   padding: 0.5em;
   transition: all 0.5s ease;
@@ -186,8 +191,8 @@ i.fab {
   text-align: center;
 }
 i.fab:hover {
-  background: #929292;
-  color: white;
+  background: white;
+  color: #76A9CC;
 }
 
 .portada {
@@ -239,7 +244,7 @@ i.fab:hover {
   flex: 50%;
   background-size: cover;
   transition: all 0.5s ease;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
 }
 @media only screen and (min-width: 600px) {
   .colores .muestra {

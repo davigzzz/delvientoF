@@ -76,6 +76,11 @@
   margin: 1rem 2rem;
   padding-top: 1.1rem;
 }
+@media only screen and (min-width: 700px) {
+  .btn-menu {
+    margin: 2rem;
+  }
+}
 .btn-menu #menu {
   height: 1rem;
 }
@@ -393,6 +398,7 @@ i.fab:hover {
   color: white;
   padding: 0.5rem 2rem 0.5rem 2rem;
   border: 1px solid #D8D8D8;
+  order: 2;
 }
 @media only screen and (min-width: 900px) {
   .contenedor-botones .boton:nth-child(1) {
