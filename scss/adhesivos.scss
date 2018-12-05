@@ -28,13 +28,13 @@ $gris: #808080;
     display: flex;
     overflow: hidden;
     background-color: #373125;
-    height: 100px;
+    height: 70px;
     @media only screen and (min-width: 700px){
-        height: 140px;
+        height: 100px;
     }
     a{
         float: left;
-        color: black;
+        color: white;
         text-align: center;
         padding: 2rem 1.5rem;
         text-decoration: none;
@@ -43,18 +43,18 @@ $gris: #808080;
             font-size: 17px;
         }
         &:hover{
-            color: white;
+            color: #8F8F8F;
         }
         
     }
     .active{
-        color: white;
+        color: #8F8F8F;
     }}
       /* LOGO */
     .logo{
         background-image: url("../iconos_logos/logo.png");
-        width: 10rem;
-        height: 70px;
+        width: 9rem;
+        height: 100px;
         /* margin: 2rem, 2rem; */
         margin-top: 1rem;
         margin-left: 1rem;
@@ -97,7 +97,7 @@ $gris: #808080;
         display: block;
         float: right;  
         padding-right: 2rem;    
-        padding-top: 2.2rem;
+        padding-top: 1.2rem;
         align-items: center;
     }
     .logo{
@@ -495,6 +495,9 @@ i.fab {
     }
 }
 
+
+
+
 .footer-grande{
     display: none;
     /* height: 260px; */
@@ -518,14 +521,7 @@ i.fab {
             padding-top: 2rem;
         }
         .logo-blanco{
-            background-image: url("../iconos_logos/logo.png");
-            width: 16rem;
-            height: 90px;
-            /* margin: 2rem, 2rem; */
-            margin-top: .73rem;
-            padding-bottom: 2.2rem;
-            background-size: 100%;
-            background-repeat: no-repeat;
+            display: none;
         
         }
     }
@@ -536,7 +532,7 @@ i.fab {
         text-align: center;
         flex-basis: 40%;
         a i{
-            padding-top: 6.5rem;        
+            padding-top: 1.5rem;        
         }
         .flecha{
             padding-top: 20px;
@@ -564,7 +560,7 @@ i.fab {
         .contacto-footer{
             font-size: 10.5px;
             justify-content: center;
-            padding-top: 154px;
+            padding-top: 74px;
             text-align: justify;
             text-align: center;
         
@@ -581,7 +577,7 @@ p#ultimo{
         padding-left: 4rem;
     }
     .contacto-footer{
-        padding-top: 154px;
+        padding-top: 74px;
     }
     p#ultimo{
         padding-top: 50.5px;

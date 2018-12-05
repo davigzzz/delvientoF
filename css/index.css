@@ -24,16 +24,16 @@
   display: flex;
   overflow: hidden;
   background-color: #76A9CC;
-  height: 100px;
+  height: 70px;
 }
 @media only screen and (min-width: 700px) {
   .topnav {
-    height: 140px;
+    height: 100px;
   }
 }
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 2rem 1.5rem;
   text-decoration: none;
@@ -45,10 +45,10 @@
   }
 }
 .topnav a:hover {
-  color: white;
+  color: #337cac;
 }
 .topnav .active {
-  color: white;
+  color: #337cac;
 }
 
 /* LOGO */
@@ -102,7 +102,7 @@
     display: block;
     float: right;
     padding-right: 2rem;
-    padding-top: 2.2rem;
+    padding-top: 1.2rem;
     align-items: center;
   }
 
@@ -634,14 +634,7 @@ html, body {
   padding-top: 2rem;
 }
 .footer-grande .col-izquierda .logo-blanco {
-  background-image: url("../iconos_logos/logo.png");
-  width: 16rem;
-  height: 90px;
-  /* margin: 2rem, 2rem; */
-  margin-top: 0.73rem;
-  padding-bottom: 2.2rem;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  display: none;
 }
 .footer-grande .col-centro {
   display: flex;
@@ -651,7 +644,7 @@ html, body {
   flex-basis: 40%;
 }
 .footer-grande .col-centro a i {
-  padding-top: 6.5rem;
+  padding-top: 1.5rem;
 }
 .footer-grande .col-centro .flecha {
   padding-top: 20px;
@@ -677,7 +670,7 @@ html, body {
 .footer-grande .col-derecha .contacto-footer {
   font-size: 10.5px;
   justify-content: center;
-  padding-top: 154px;
+  padding-top: 74px;
   text-align: justify;
   text-align: center;
 }
@@ -692,7 +685,7 @@ p#ultimo {
   }
 
   .contacto-footer {
-    padding-top: 154px;
+    padding-top: 74px;
   }
 
   p#ultimo {

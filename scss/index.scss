@@ -28,13 +28,13 @@ $gris: #808080;
     display: flex;
     overflow: hidden;
     background-color: $azul;
-    height: 100px;
+    height: 70px;
     @media only screen and (min-width: 700px){
-        height: 140px;
+        height: 100px;
     }
     a{
         float: left;
-        color: black;
+        color: white;
         text-align: center;
         padding: 2rem 1.5rem;
         text-decoration: none;
@@ -43,12 +43,12 @@ $gris: #808080;
             font-size: 17px;
         }
         &:hover{
-            color: white;
+            color: rgb(51, 124, 172);
         }
         
     }
     .active{
-        color: white;
+        color: rgb(51, 124, 172);
     }}
       /* LOGO */
     .logo{
@@ -97,7 +97,7 @@ $gris: #808080;
         display: block;
         float: right;  
         padding-right: 2rem;    
-        padding-top: 2.2rem;
+        padding-top: 1.2rem;
         align-items: center;
     }
     .logo{
@@ -606,14 +606,7 @@ html, body {
             padding-top: 2rem;
         }
         .logo-blanco{
-            background-image: url("../iconos_logos/logo.png");
-            width: 16rem;
-            height: 90px;
-            /* margin: 2rem, 2rem; */
-            margin-top: .73rem;
-            padding-bottom: 2.2rem;
-            background-size: 100%;
-            background-repeat: no-repeat;
+            display: none;
         
         }
     }
@@ -624,7 +617,7 @@ html, body {
         text-align: center;
         flex-basis: 40%;
         a i{
-            padding-top: 6.5rem;        
+            padding-top: 1.5rem;        
         }
         .flecha{
             padding-top: 20px;
@@ -652,7 +645,7 @@ html, body {
         .contacto-footer{
             font-size: 10.5px;
             justify-content: center;
-            padding-top: 154px;
+            padding-top: 74px;
             text-align: justify;
             text-align: center;
         
@@ -669,7 +662,7 @@ p#ultimo{
         padding-left: 4rem;
     }
     .contacto-footer{
-        padding-top: 154px;
+        padding-top: 74px;
     }
     p#ultimo{
         padding-top: 50.5px;
