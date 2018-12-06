@@ -280,11 +280,11 @@ i.fab:hover {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor {
     flex-direction: row;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 }
 .contenedor .imagen {
@@ -298,26 +298,22 @@ i.fab:hover {
     background-image: url("../imagenes_pinturas/bronceL.jpg");
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor .imagen {
-    flex: 33%;
-    height: 38vw;
+    flex: 57%;
+    height: 28vw;
+    background-repeat: no-repeat;
   }
 }
 .contenedor .texto {
-  flex: 67%;
+  flex: 43%;
   font-family: gothamlight;
-  margin: 2rem;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto p {
-    margin-left: 3rem;
-  }
+  margin: 3rem;
 }
 .contenedor .texto h4 {
   display: none;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor .texto h4 {
     display: block;
     font-family: Raleway;
@@ -325,37 +321,39 @@ i.fab:hover {
     margin-left: 3rem;
   }
 }
-.contenedor .texto .parrafo {
-  display: none;
-}
-@media only screen and (min-width: 700px) {
-  .contenedor .texto .parrafo {
-    display: block;
-    margin-bottom: 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .contenedor .texto .parrafo {
-    margin-right: 15vw;
-  }
-}
 .contenedor .texto .caracteristicas {
   display: flex;
 }
 .contenedor .texto .caracteristicas p {
-  flex: 65%;
+  flex: 53%;
 }
 .contenedor .texto .caracteristicas .botones {
   flex: 35%;
 }
 
+.nuevo-texto {
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  .nuevo-texto {
+    display: flex;
+    font-family: Raleway;
+  }
+  .nuevo-texto .izq {
+    flex: 40%;
+    margin-left: 5rem;
+  }
+  .nuevo-texto .der {
+    flex: 37%;
+  }
+}
+
 #botonesL {
   display: none;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   #botonesL {
     display: flex;
-    flex-direction: column;
     flex: 35%;
   }
 }
@@ -423,6 +421,7 @@ i.fab:hover {
   .conocemas {
     display: flex;
     font-family: Raleway;
+    margin-top: 3rem;
   }
   .conocemas .izquierda {
     background-image: url("../imagenes_pinturas/imper.jpg");
