@@ -23,7 +23,7 @@
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #141F3F;
+  background-color: #b11a1a;
   height: 70px;
 }
 @media only screen and (min-width: 700px) {
@@ -45,10 +45,10 @@
   }
 }
 .topnav a:hover {
-  color: #76A9CC;
+  color: #f56464;
 }
 .topnav .active {
-  color: #76A9CC;
+  color: #f56464;
 }
 
 /* LOGO */
@@ -192,7 +192,7 @@ i.fab {
 }
 i.fab:hover {
   background: white;
-  color: #141F3F;
+  color: #b11a1a;
 }
 
 .portada {

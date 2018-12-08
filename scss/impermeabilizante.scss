@@ -27,7 +27,7 @@ $gris: #808080;
     justify-content: space-between;
     display: flex;
     overflow: hidden;
-    background-color: #141F3F;
+    background-color: #b11a1a;
     height: 70px;
     @media only screen and (min-width: 700px){
         height: 100px;
@@ -43,12 +43,12 @@ $gris: #808080;
             font-size: 17px;
         }
         &:hover{
-            color: $azul;
+            color: #f56464;
         }
         
     }
     .active{
-        color: $azul;
+        color: #f56464;
     }}
       /* LOGO */
     .logo{
@@ -188,7 +188,7 @@ i.fab {
     text-align: center; 
     &:hover{
         background: white;
-        color: #141F3F;
+        color: #b11a1a;
     }
 } 
 
