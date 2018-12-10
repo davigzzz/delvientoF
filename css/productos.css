@@ -234,8 +234,26 @@ i.fab:hover {
   }
 }
 
+.pared {
+  background-image: url("../imagenes_productos/paredS.jpg");
+  height: 95vw;
+  margin-bottom: 2rem;
+  background-size: cover;
+}
+@media only screen and (min-width: 700px) {
+  .pared {
+    background-image: url("../imagenes_productos/pared.jpg");
+    height: 39vw;
+    margin-bottom: 3vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 .colores {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
@@ -593,6 +611,14 @@ i.fab:hover {
 
 #recub {
   background-image: url("../imagenes_productos/recub.jpg");
+}
+
+#adhesivos {
+  background-image: url("../imagenes_productos/adhesivo.jpg");
+}
+
+#vinilo {
+  background-image: url("../imagenes_productos/vinilo.jpg");
 }
 
 .seccion3 {
