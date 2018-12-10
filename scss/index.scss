@@ -375,9 +375,10 @@ html, body {
             }
         }
         .mas{
-            @include texto(60%);
+            @include texto(65%);
             @media only screen and (min-width: 700px){
                 font-size: 3vw;
+                top: 60%;
             }
         }
     }

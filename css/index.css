@@ -386,7 +386,7 @@ html, body {
 }
 .imagenes .imagen .mas {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -403,6 +403,7 @@ html, body {
 @media only screen and (min-width: 700px) {
   .imagenes .imagen .mas {
     font-size: 3vw;
+    top: 60%;
   }
 }
 
